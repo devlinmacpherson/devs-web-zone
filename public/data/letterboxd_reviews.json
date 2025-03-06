@@ -1,0 +1,3724 @@
+{
+  "movies": [
+    {
+      "id": "fanboys-2009",
+      "title": "Fanboys",
+      "year": 2009,
+      "director": "Kyle Newman",
+      "cast": [
+        "Sam Huntington",
+        "Jay Baruchel",
+        "Dan Fogler"
+      ],
+      "genres": [
+        "Adventure",
+        "Crime",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "wander-to-wonder-2023",
+      "title": "Wander to Wonder",
+      "year": 2023,
+      "director": "Nina Gantz",
+      "cast": [
+        "Neil Salvage",
+        "Toby Jones",
+        "Amanda Lawrence"
+      ],
+      "genres": [
+        "Animation"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "nickel-boys-2024",
+      "title": "Nickel Boys",
+      "year": 2024,
+      "director": "RaMell Ross",
+      "cast": [
+        "Ethan Herisse",
+        "Brandon Wilson",
+        "Aunjanue Ellis-Taylor"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "i'm-still-here-2024",
+      "title": "I'm Still Here",
+      "year": 2024,
+      "director": "Walter Salles",
+      "cast": [
+        "Fernanda Torres",
+        "Selton Mello",
+        "Valentina Herszage"
+      ],
+      "genres": [
+        "Drama",
+        "History"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "beautiful-men-2023",
+      "title": "Beautiful Men",
+      "year": 2023,
+      "director": "Nicolas Keppens",
+      "cast": [
+        "Peter van den Begin",
+        "Peter De Graef",
+        "Tom Dewispelaere"
+      ],
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "flow-2024",
+      "title": "Flow",
+      "year": 2024,
+      "director": "Gints Zilbalodis",
+      "cast": [],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Animation"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "conclave-2024",
+      "title": "Conclave",
+      "year": 2024,
+      "director": "Edward Berger",
+      "cast": [
+        "Ralph Fiennes",
+        "Stanley Tucci",
+        "John Lithgow"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "i-am-ready,-warden-2024",
+      "title": "I Am Ready, Warden",
+      "year": 2024,
+      "director": "Smriti Mundhra",
+      "cast": [
+        "John Henry Ramirez",
+        "Aaron Castro",
+        "Jan Trujillo"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "magic-candies-2024",
+      "title": "Magic Candies",
+      "year": 2024,
+      "director": "Daisuke Nishio",
+      "cast": [
+        "Haruto Shima",
+        "Hiroshi Iwasaki",
+        "Kazuhiro Yamaji"
+      ],
+      "genres": [
+        "Animation",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "instruments-of-a-beating-heart-2024",
+      "title": "Instruments of a Beating Heart",
+      "year": 2024,
+      "director": "Ema Ryan Yamazaki",
+      "cast": [],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-last-ranger-2024",
+      "title": "The Last Ranger",
+      "year": 2024,
+      "director": "Cindy Lee",
+      "cast": [
+        "Liyabona Mroqoza",
+        "Avumile Qongqo",
+        "David S. Lee"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "maria-2024",
+      "title": "Maria",
+      "year": 2024,
+      "director": "Pablo Larraín",
+      "cast": [
+        "Angelina Jolie",
+        "Pierfrancesco Favino",
+        "Alba Rohrwacher"
+      ],
+      "genres": [
+        "Music",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-wild-robot-2024",
+      "title": "The Wild Robot",
+      "year": 2024,
+      "director": "Chris Sanders",
+      "cast": [
+        "Lupita Nyong'o",
+        "Pedro Pascal",
+        "Kit Connor"
+      ],
+      "genres": [
+        "Family",
+        "Science Fiction",
+        "Animation"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "a-different-man-2024",
+      "title": "A Different Man",
+      "year": 2024,
+      "director": "Aaron Schimberg",
+      "cast": [
+        "Sebastian Stan",
+        "Renate Reinsve",
+        "Adam Pearson"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "yuck!-2024",
+      "title": "Yuck!",
+      "year": 2024,
+      "director": "Loïc Espuche",
+      "cast": [
+        "Noé Chabbat",
+        "Katell Varvat",
+        "Enzo Desmedt"
+      ],
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "gladiator-ii-2024",
+      "title": "Gladiator II",
+      "year": 2024,
+      "director": "Ridley Scott",
+      "cast": [
+        "Paul Mescal",
+        "Denzel Washington",
+        "Pedro Pascal"
+      ],
+      "genres": [
+        "Drama",
+        "Action",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "elton-john:-never-too-late-2024",
+      "title": "Elton John: Never Too Late",
+      "year": 2024,
+      "director": "R. J. Cutler",
+      "cast": [
+        "Elton John",
+        "Bernie Taupin",
+        "Dua Lipa"
+      ],
+      "genres": [
+        "Documentary",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-only-girl-in-the-orchestra-2023",
+      "title": "The Only Girl in the Orchestra",
+      "year": 2023,
+      "director": "Molly O'Brien",
+      "cast": [
+        "Orin O'Brien",
+        "Molly O'Brien",
+        "George O'Brien"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "kingdom-of-the-planet-of-the-apes-2024",
+      "title": "Kingdom of the Planet of the Apes",
+      "year": 2024,
+      "director": "Wes Ball",
+      "cast": [
+        "Owen Teague",
+        "Freya Allan",
+        "Kevin Durand"
+      ],
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Thriller",
+        "Action",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "keep-it-burning-2024",
+      "title": "Keep it Burning",
+      "year": 2024,
+      "director": "Guillaume Broust",
+      "cast": [
+        "Edu Marín",
+        "Novato Marín",
+        "Alejandro Marín"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "wolf-of-wingsuit-unknown",
+      "title": "Wolf of Wingsuit",
+      "year": null,
+      "director": "Aaron Garcia",
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "a-complete-unknown-2024",
+      "title": "A Complete Unknown",
+      "year": 2024,
+      "director": "James Mangold",
+      "cast": [
+        "Timothée Chalamet",
+        "Edward Norton",
+        "Elle Fanning"
+      ],
+      "genres": [
+        "Drama",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "nosferatu-2024",
+      "title": "Nosferatu",
+      "year": 2024,
+      "director": "Robert Eggers",
+      "cast": [
+        "Lily-Rose Depp",
+        "Nicholas Hoult",
+        "Bill Skarsgård"
+      ],
+      "genres": [
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "inside-out-2-2024",
+      "title": "Inside Out 2",
+      "year": 2024,
+      "director": "Kelsey Mann",
+      "cast": [
+        "Amy Poehler",
+        "Maya Hawke",
+        "Kensington Tallman"
+      ],
+      "genres": [
+        "Comedy",
+        "Family",
+        "Animation",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "september-5-2024",
+      "title": "September 5",
+      "year": 2024,
+      "director": "Tim Fehlbaum",
+      "cast": [
+        "John Magaro",
+        "Leonie Benesch",
+        "Peter Sarsgaard"
+      ],
+      "genres": [
+        "History",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-six-triple-eight-2024",
+      "title": "The Six Triple Eight",
+      "year": 2024,
+      "director": "Tyler Perry",
+      "cast": [
+        "Kerry Washington",
+        "Sam Waterston",
+        "Susan Sarandon"
+      ],
+      "genres": [
+        "History",
+        "Drama",
+        "War"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "sugarcane-2024",
+      "title": "Sugarcane",
+      "year": 2024,
+      "director": "Emily Kassie",
+      "cast": [
+        "Julian Brave NoiseCat",
+        "Willie Sellars",
+        "Charlene Belleau"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "indiana-jones-and-the-temple-of-doom-1984",
+      "title": "Indiana Jones and the Temple of Doom",
+      "year": 1984,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": null
+    },
+    {
+      "id": "better-man-2024",
+      "title": "Better Man",
+      "year": 2024,
+      "director": "Michael Gracey",
+      "cast": [
+        "Robbie Williams",
+        "Jonno Davies",
+        "Steve Pemberton"
+      ],
+      "genres": [
+        "Music",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "e.t.-the-extra-terrestrial-1982",
+      "title": "E.T. the Extra-Terrestrial",
+      "year": 1982,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": null
+    },
+    {
+      "id": "close-encounters-of-the-third-kind-1977",
+      "title": "Close Encounters of the Third Kind",
+      "year": 1977,
+      "director": "Steven Spielberg",
+      "cast": [
+        "Richard Dreyfuss",
+        "François Truffaut",
+        "Teri Garr"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "emilia-pérez-2024",
+      "title": "Emilia Pérez",
+      "year": 2024,
+      "director": "Jacques Audiard",
+      "cast": [
+        "Zoe Saldaña",
+        "Karla Sofía Gascón",
+        "Selena Gomez"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "jingle-all-the-way-1996",
+      "title": "Jingle All the Way",
+      "year": 1996,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": null
+    },
+    {
+      "id": "white-christmas-1954",
+      "title": "White Christmas",
+      "year": 1954,
+      "director": "Michael Curtiz",
+      "cast": [
+        "Bing Crosby",
+        "Danny Kaye",
+        "Rosemary Clooney"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "wicked-2024",
+      "title": "Wicked",
+      "year": 2024,
+      "director": "Jon M. Chu",
+      "cast": [
+        "Cynthia Erivo",
+        "Ariana Grande",
+        "Jeff Goldblum"
+      ],
+      "genres": [
+        "Romance",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "anora-2024",
+      "title": "Anora",
+      "year": 2024,
+      "director": "Sean Baker",
+      "cast": [
+        "Mikey Madison",
+        "Mark Eydelshteyn",
+        "Yura Borisov"
+      ],
+      "genres": [
+        "Drama",
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "here-2024",
+      "title": "Here",
+      "year": 2024,
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Paul Bettany"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "planet-of-the-apes-2001",
+      "title": "Planet of the Apes",
+      "year": 2001,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": null
+    },
+    {
+      "id": "the-rocky-horror-picture-show-1975",
+      "title": "The Rocky Horror Picture Show",
+      "year": 1975,
+      "director": "Jim Sharman",
+      "cast": [
+        "Tim Curry",
+        "Susan Sarandon",
+        "Barry Bostwick"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Fantasy",
+        "Horror",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "priscilla-2023",
+      "title": "Priscilla",
+      "year": 2023,
+      "director": "Sofia Coppola",
+      "cast": [
+        "Cailee Spaeny",
+        "Jacob Elordi",
+        "Ari Cohen"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "mars-attacks!-1996",
+      "title": "Mars Attacks!",
+      "year": 1996,
+      "director": "Tim Burton",
+      "cast": [
+        "Jack Nicholson",
+        "Glenn Close",
+        "Annette Bening"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Fantasy",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "ed-wood-1994",
+      "title": "Ed Wood",
+      "year": 1994,
+      "director": "Tim Burton",
+      "cast": [
+        "Johnny Depp",
+        "Martin Landau",
+        "Sarah Jessica Parker"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "History"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "i'm-not-a-robot-2023",
+      "title": "I'm Not a Robot",
+      "year": 2023,
+      "director": "Victoria Warmerdam",
+      "cast": [
+        "Ellen Parren",
+        "Henry van Loon",
+        "Thekla Reuten"
+      ],
+      "genres": [
+        "Thriller",
+        "Science Fiction",
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-streif-unknown",
+      "title": "The Streif",
+      "year": null,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "of-a-lifetime-2024",
+      "title": "Of A Lifetime",
+      "year": 2024,
+      "director": "Jérôme Tanon",
+      "cast": [
+        "Xavier de le Rue",
+        "Victor De Le Rue",
+        "Mila De Le Rue"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "a-real-pain-2024",
+      "title": "A Real Pain",
+      "year": 2024,
+      "director": "Jesse Eisenberg",
+      "cast": [
+        "Jesse Eisenberg",
+        "Kieran Culkin",
+        "Will Sharpe"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "cunk-on-life-2024",
+      "title": "Cunk on Life",
+      "year": 2024,
+      "director": "Al Campbell",
+      "cast": [
+        "Diane Morgan",
+        "Douglas Hedley",
+        "Rupert Sheldrake"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "challengers-2024",
+      "title": "Challengers",
+      "year": 2024,
+      "director": "Luca Guadagnino",
+      "cast": [
+        "Zendaya",
+        "Mike Faist",
+        "Josh O'Connor"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "wallace-&-gromit:-vengeance-most-fowl-2024",
+      "title": "Wallace & Gromit: Vengeance Most Fowl",
+      "year": 2024,
+      "director": "Merlin Crossingham",
+      "cast": [
+        "Ben Whitehead",
+        "Peter Kay",
+        "Lauren Patel"
+      ],
+      "genres": [
+        "Adventure",
+        "Family",
+        "Comedy",
+        "Animation"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-fall-guy-2024",
+      "title": "The Fall Guy",
+      "year": 2024,
+      "director": "David Leitch",
+      "cast": [
+        "Ryan Gosling",
+        "Emily Blunt",
+        "Aaron Taylor-Johnson"
+      ],
+      "genres": [
+        "Romance",
+        "Action",
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-batman-2022",
+      "title": "The Batman",
+      "year": 2022,
+      "director": "Matt Reeves",
+      "cast": [
+        "Robert Pattinson",
+        "Zoë Kravitz",
+        "Jeffrey Wright"
+      ],
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "yintah-2024",
+      "title": "Yintah",
+      "year": 2024,
+      "director": "Brenda Michell",
+      "cast": [
+        "Howilhkat Freda Huson",
+        "Sleydo' Molly Wickham"
+      ],
+      "genres": [
+        "Drama",
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "lady-bird-2017",
+      "title": "Lady Bird",
+      "year": 2017,
+      "director": null,
+      "cast": [],
+      "genres": [],
+      "runtime": null,
+      "poster_url": null
+    },
+    {
+      "id": "lisa-frankenstein-2024",
+      "title": "Lisa Frankenstein",
+      "year": 2024,
+      "director": "Zelda Williams",
+      "cast": [
+        "Kathryn Newton",
+        "Cole Sprouse",
+        "Liza Soberano"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Horror"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "10,000-bc-2008",
+      "title": "10,000 BC",
+      "year": 2008,
+      "director": "Roland Emmerich",
+      "cast": [
+        "Steven Strait",
+        "Camilla Belle",
+        "Cliff Curtis"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "hamilton-2020",
+      "title": "Hamilton",
+      "year": 2020,
+      "director": "Thomas Kail",
+      "cast": [
+        "Lin-Manuel Miranda",
+        "Leslie Odom Jr.",
+        "Renée Elise Goldsberry"
+      ],
+      "genres": [
+        "History",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "romancing-the-stone-1984",
+      "title": "Romancing the Stone",
+      "year": 1984,
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Michael Douglas",
+        "Kathleen Turner",
+        "Danny DeVito"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Adventure",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "i-love-you,-man-2009",
+      "title": "I Love You, Man",
+      "year": 2009,
+      "director": "John Hamburg",
+      "cast": [
+        "Paul Rudd",
+        "Jason Segel",
+        "Rashida Jones"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "hercules-1997",
+      "title": "Hercules",
+      "year": 1997,
+      "director": "John Musker",
+      "cast": [
+        "Tate Donovan",
+        "Josh Keaton",
+        "Roger Bart"
+      ],
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Romance",
+        "Comedy",
+        "Fantasy",
+        "Family"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "bad-moms-2016",
+      "title": "Bad Moms",
+      "year": 2016,
+      "director": "Scott Moore",
+      "cast": [
+        "Mila Kunis",
+        "Kristen Bell",
+        "Kathryn Hahn"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-other-woman-2014",
+      "title": "The Other Woman",
+      "year": 2014,
+      "director": "Nick Cassavetes",
+      "cast": [
+        "Cameron Diaz",
+        "Leslie Mann",
+        "Kate Upton"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "love-the-coopers-2015",
+      "title": "Love the Coopers",
+      "year": 2015,
+      "director": "Jessie Nelson",
+      "cast": [
+        "Diane Keaton",
+        "John Goodman",
+        "Ed Helms"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Family"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "hot-frosty-2024",
+      "title": "Hot Frosty",
+      "year": 2024,
+      "director": "Jerry Ciccoritti",
+      "cast": [
+        "Lacey Chabert",
+        "Dustin Milligan",
+        "Craig Robinson"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "when-in-rome-2010",
+      "title": "When in Rome",
+      "year": 2010,
+      "director": "Mark Steven Johnson",
+      "cast": [
+        "Kristen Bell",
+        "Josh Duhamel",
+        "Anjelica Huston"
+      ],
+      "genres": [
+        "Romance",
+        "Fantasy",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "deadpool-&-wolverine-2024",
+      "title": "Deadpool & Wolverine",
+      "year": 2024,
+      "director": "Shawn Levy",
+      "cast": [
+        "Ryan Reynolds",
+        "Hugh Jackman",
+        "Emma Corrin"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Action",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "father-of-the-bride-1991",
+      "title": "Father of the Bride",
+      "year": 1991,
+      "director": "Charles Shyer",
+      "cast": [
+        "Steve Martin",
+        "Diane Keaton",
+        "Kimberly Williams-Paisley"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-intern-2015",
+      "title": "The Intern",
+      "year": 2015,
+      "director": "Nancy Meyers",
+      "cast": [
+        "Robert De Niro",
+        "Anne Hathaway",
+        "Rene Russo"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "a-family-affair-2024",
+      "title": "A Family Affair",
+      "year": 2024,
+      "director": "Richard LaGravenese",
+      "cast": [
+        "Nicole Kidman",
+        "Zac Efron",
+        "Joey King"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "mother's-day-2016",
+      "title": "Mother's Day",
+      "year": 2016,
+      "director": "Garry Marshall",
+      "cast": [
+        "Jennifer Aniston",
+        "Julia Roberts",
+        "Kate Hudson"
+      ],
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "click-2006",
+      "title": "Click",
+      "year": 2006,
+      "director": "Frank Coraci",
+      "cast": [
+        "Adam Sandler",
+        "Kate Beckinsale",
+        "Christopher Walken"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "80-for-brady-2023",
+      "title": "80 for Brady",
+      "year": 2023,
+      "director": "Kyle Marvin",
+      "cast": [
+        "Lily Tomlin",
+        "Jane Fonda",
+        "Rita Moreno"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "uncut-gems-2019",
+      "title": "Uncut Gems",
+      "year": 2019,
+      "director": "Benny Safdie",
+      "cast": [
+        "Adam Sandler",
+        "LaKeith Stanfield",
+        "Julia Fox"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "robot-dreams-2023",
+      "title": "Robot Dreams",
+      "year": 2023,
+      "director": "Pablo Berger",
+      "cast": [
+        "Ivan Labanda",
+        "Tito Trifol",
+        "Rafa Calvo"
+      ],
+      "genres": [
+        "Comedy",
+        "Science Fiction",
+        "Animation",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "american-fiction-2023",
+      "title": "American Fiction",
+      "year": 2023,
+      "director": "Cord Jefferson",
+      "cast": [
+        "Jeffrey Wright",
+        "John Ortiz",
+        "Erika Alexander"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "our-uniform-2023",
+      "title": "Our Uniform",
+      "year": 2023,
+      "director": "Yegane Moghaddam",
+      "cast": [],
+      "genres": [
+        "Animation",
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "in-the-shadow-of-the-cypress-2023",
+      "title": "In the Shadow of the Cypress",
+      "year": 2023,
+      "director": "Hossein Molayemi",
+      "cast": [
+        "Zahra Moosavi"
+      ],
+      "genres": [
+        "Animation",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "saturday-night-2024",
+      "title": "Saturday Night",
+      "year": 2024,
+      "director": "Jason Reitman",
+      "cast": [
+        "Gabriel LaBelle",
+        "Rachel Sennott",
+        "Cory Michael Smith"
+      ],
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "woman-of-the-hour-2023",
+      "title": "Woman of the Hour",
+      "year": 2023,
+      "director": "Anna Kendrick",
+      "cast": [
+        "Anna Kendrick",
+        "Daniel Zovatto",
+        "Tony Hale"
+      ],
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "columbus-2017",
+      "title": "Columbus",
+      "year": 2017,
+      "director": "Kogonada",
+      "cast": [
+        "John Cho",
+        "Haley Lu Richardson",
+        "Michelle Forbes"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "my-old-ass-2024",
+      "title": "My Old Ass",
+      "year": 2024,
+      "director": "Megan Park",
+      "cast": [
+        "Maisy Stella",
+        "Aubrey Plaza",
+        "Percy Hynes White"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "evil-dead-ii-1987",
+      "title": "Evil Dead II",
+      "year": 1987,
+      "director": "Sam Raimi",
+      "cast": [
+        "Bruce Campbell",
+        "Sarah Berry",
+        "Dan Hicks"
+      ],
+      "genres": [
+        "Horror",
+        "Comedy",
+        "Fantasy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "winter-in-sokcho-2024",
+      "title": "Winter in Sokcho",
+      "year": 2024,
+      "director": "Koya Kamura",
+      "cast": [
+        "Bella Kim",
+        "Roschdy Zem",
+        "Park Mi-hyun"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "pedro-páramo-2024",
+      "title": "Pedro Páramo",
+      "year": 2024,
+      "director": "Rodrigo Prieto",
+      "cast": [
+        "Manuel Garcia-Rulfo",
+        "Tenoch Huerta Mejía",
+        "Dolores Heredia"
+      ],
+      "genres": [
+        "Fantasy",
+        "Western",
+        "Mystery",
+        "Thriller",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "alien-1979",
+      "title": "Alien",
+      "year": 1979,
+      "director": "Ridley Scott",
+      "cast": [
+        "Tom Skerritt",
+        "Sigourney Weaver",
+        "Veronica Cartwright"
+      ],
+      "genres": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "death-becomes-her-1992",
+      "title": "Death Becomes Her",
+      "year": 1992,
+      "director": "Robert Zemeckis",
+      "cast": [
+        "Goldie Hawn",
+        "Bruce Willis",
+        "Meryl Streep"
+      ],
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Horror"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "float-2023",
+      "title": "Float",
+      "year": 2023,
+      "director": "Sherren Lee",
+      "cast": [
+        "Andrea Bang",
+        "Robbie Amell",
+        "Michelle Krusiec"
+      ],
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "ru-2023",
+      "title": "Ru",
+      "year": 2023,
+      "director": "Charles-Olivier Michaud",
+      "cast": [
+        "Chloé Djandji",
+        "Chantal Thuy",
+        "Jean Bui"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "late-night-with-the-devil-2023",
+      "title": "Late Night with the Devil",
+      "year": 2023,
+      "director": "Cameron Cairnes",
+      "cast": [
+        "David Dastmalchian",
+        "Laura Gordon",
+        "Ian Bliss"
+      ],
+      "genres": [
+        "Horror"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "before-sunrise-1995",
+      "title": "Before Sunrise",
+      "year": 1995,
+      "director": "Richard Linklater",
+      "cast": [
+        "Ethan Hawke",
+        "Julie Delpy",
+        "Andrea Eckert"
+      ],
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "perfect-days-2023",
+      "title": "Perfect Days",
+      "year": 2023,
+      "director": "Wim Wenders",
+      "cast": [
+        "Koji Yakusho",
+        "Tokio Emoto",
+        "Arisa Nakano"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-holdovers-2023",
+      "title": "The Holdovers",
+      "year": 2023,
+      "director": "Alexander Payne",
+      "cast": [
+        "Paul Giamatti",
+        "Dominic Sessa",
+        "Da'Vine Joy Randolph"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-iron-claw-2023",
+      "title": "The Iron Claw",
+      "year": 2023,
+      "director": "Sean Durkin",
+      "cast": [
+        "Zac Efron",
+        "Jeremy Allen White",
+        "Harris Dickinson"
+      ],
+      "genres": [
+        "History",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "your-place-or-mine-2023",
+      "title": "Your Place or Mine",
+      "year": 2023,
+      "director": "Aline Brosh McKenna",
+      "cast": [
+        "Reese Witherspoon",
+        "Ashton Kutcher",
+        "Jesse Williams"
+      ],
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "whiplash-2014",
+      "title": "Whiplash",
+      "year": 2014,
+      "director": "Damien Chazelle",
+      "cast": [
+        "Miles Teller",
+        "J.K. Simmons",
+        "Paul Reiser"
+      ],
+      "genres": [
+        "Drama",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "top-gun:-maverick-2022",
+      "title": "Top Gun: Maverick",
+      "year": 2022,
+      "director": "Joseph Kosinski",
+      "cast": [
+        "Tom Cruise",
+        "Miles Teller",
+        "Monica Barbaro"
+      ],
+      "genres": [
+        "Action",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "aftersun-2022",
+      "title": "Aftersun",
+      "year": 2022,
+      "director": "Charlotte Wells",
+      "cast": [
+        "Paul Mescal",
+        "Frankie Corio",
+        "Brooklyn Toulson"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "elvis-2022",
+      "title": "Elvis",
+      "year": 2022,
+      "director": "Baz Luhrmann",
+      "cast": [
+        "Austin Butler",
+        "Tom Hanks",
+        "Olivia DeJonge"
+      ],
+      "genres": [
+        "History",
+        "Drama",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "glass-onion-2022",
+      "title": "Glass Onion",
+      "year": 2022,
+      "director": "Rian Johnson",
+      "cast": [
+        "Daniel Craig",
+        "Edward Norton",
+        "Janelle Monáe"
+      ],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Mystery"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "bullet-train-2022",
+      "title": "Bullet Train",
+      "year": 2022,
+      "director": "David Leitch",
+      "cast": [
+        "Brad Pitt",
+        "Joey King",
+        "Aaron Taylor-Johnson"
+      ],
+      "genres": [
+        "Thriller",
+        "Comedy",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "avatar:-the-way-of-water-2022",
+      "title": "Avatar: The Way of Water",
+      "year": 2022,
+      "director": "James Cameron",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldaña",
+        "Sigourney Weaver"
+      ],
+      "genres": [
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "saltburn-2023",
+      "title": "Saltburn",
+      "year": 2023,
+      "director": "Emerald Fennell",
+      "cast": [
+        "Barry Keoghan",
+        "Jacob Elordi",
+        "Rosamund Pike"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "oppenheimer-2023",
+      "title": "Oppenheimer",
+      "year": 2023,
+      "director": "Christopher Nolan",
+      "cast": [
+        "Cillian Murphy",
+        "Emily Blunt",
+        "Matt Damon"
+      ],
+      "genres": [
+        "History",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "barbie-2023",
+      "title": "Barbie",
+      "year": 2023,
+      "director": "Greta Gerwig",
+      "cast": [
+        "Margot Robbie",
+        "Ryan Gosling",
+        "America Ferrera"
+      ],
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-cokeville-miracle-2015",
+      "title": "The Cokeville Miracle",
+      "year": 2015,
+      "director": "T.C. Christensen",
+      "cast": [
+        "Nathan Stevens",
+        "Jasen Wade",
+        "Caitlin E.J. Meyer"
+      ],
+      "genres": [
+        "History",
+        "Thriller",
+        "Drama",
+        "Mystery",
+        "Family"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "on-a-wing-and-a-prayer-2023",
+      "title": "On a Wing and a Prayer",
+      "year": 2023,
+      "director": "Sean McNamara",
+      "cast": [
+        "Dennis Quaid",
+        "Heather Graham",
+        "Jesse Metcalfe"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "john-wick:-chapter-4-2023",
+      "title": "John Wick: Chapter 4",
+      "year": 2023,
+      "director": "Chad Stahelski",
+      "cast": [
+        "Keanu Reeves",
+        "Donnie Yen Chi-Tan",
+        "Bill Skarsgård"
+      ],
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "john-wick:-chapter-3-–-parabellum-2019",
+      "title": "John Wick: Chapter 3 – Parabellum",
+      "year": 2019,
+      "director": "Chad Stahelski",
+      "cast": [
+        "Keanu Reeves",
+        "Halle Berry",
+        "Ian McShane"
+      ],
+      "genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "disco-godfather-1979",
+      "title": "Disco Godfather",
+      "year": 1979,
+      "director": "J. Robert Wagoner",
+      "cast": [
+        "Rudy Ray Moore",
+        "Carol Speed",
+        "Jimmy Lynch"
+      ],
+      "genres": [
+        "Comedy",
+        "Crime",
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "beach-blanket-bingo-1965",
+      "title": "Beach Blanket Bingo",
+      "year": 1965,
+      "director": "William Asher",
+      "cast": [
+        "Frankie Avalon",
+        "Annette Funicello",
+        "Deborah Walley"
+      ],
+      "genres": [
+        "Comedy",
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "project-x-2012",
+      "title": "Project X",
+      "year": 2012,
+      "director": "Nima Nourizadeh",
+      "cast": [
+        "Thomas Mann",
+        "Oliver Cooper",
+        "Jonathan Daniel Brown"
+      ],
+      "genres": [
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "puss-in-boots:-the-last-wish-2022",
+      "title": "Puss in Boots: The Last Wish",
+      "year": 2022,
+      "director": "Joel Crawford",
+      "cast": [
+        "Antonio Banderas",
+        "Salma Hayek Pinault",
+        "Harvey Guillén"
+      ],
+      "genres": [
+        "Animation",
+        "Family",
+        "Fantasy",
+        "Comedy",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-green-knight-2021",
+      "title": "The Green Knight",
+      "year": 2021,
+      "director": "David Lowery",
+      "cast": [
+        "Dev Patel",
+        "Alicia Vikander",
+        "Joel Edgerton"
+      ],
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "coherence-2013",
+      "title": "Coherence",
+      "year": 2013,
+      "director": "James Ward Byrkit",
+      "cast": [
+        "Emily Baldoni",
+        "Maury Sterling",
+        "Nicholas Brendon"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-banshees-of-inisherin-2022",
+      "title": "The Banshees of Inisherin",
+      "year": 2022,
+      "director": "Martin McDonagh",
+      "cast": [
+        "Colin Farrell",
+        "Brendan Gleeson",
+        "Kerry Condon"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "something's-gotta-give-2003",
+      "title": "Something's Gotta Give",
+      "year": 2003,
+      "director": "Nancy Meyers",
+      "cast": [
+        "Jack Nicholson",
+        "Diane Keaton",
+        "Keanu Reeves"
+      ],
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "idiocracy-2006",
+      "title": "Idiocracy",
+      "year": 2006,
+      "director": "Mike Judge",
+      "cast": [
+        "Luke Wilson",
+        "Maya Rudolph",
+        "Dax Shepard"
+      ],
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Comedy",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "shooter-2007",
+      "title": "Shooter",
+      "year": 2007,
+      "director": "Antoine Fuqua",
+      "cast": [
+        "Mark Wahlberg",
+        "Michael Peña",
+        "Danny Glover"
+      ],
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "society-of-the-snow-2023",
+      "title": "Society of the Snow",
+      "year": 2023,
+      "director": "J.A. Bayona",
+      "cast": [
+        "Enzo Vogrincic",
+        "Agustín Pardella",
+        "Matías Recalt"
+      ],
+      "genres": [
+        "History",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "bank-of-dave-2023",
+      "title": "Bank of Dave",
+      "year": 2023,
+      "director": "Chris Foggin",
+      "cast": [
+        "Rory Kinnear",
+        "Jo Hartley",
+        "Joel Fry"
+      ],
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-killer-2023",
+      "title": "The Killer",
+      "year": 2023,
+      "director": "David Fincher",
+      "cast": [
+        "Michael Fassbender",
+        "Tilda Swinton",
+        "Charles Parnell"
+      ],
+      "genres": [
+        "Thriller",
+        "Crime"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "there's-a-crack-in-everything-2025",
+      "title": "There's A Crack In Everything",
+      "year": 2025,
+      "director": "Benjamin Shapiro",
+      "cast": [
+        "Benjamin Shapiro",
+        "Zev Citron",
+        "Kylie Patton"
+      ],
+      "genres": [
+        "Music"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "hereditary-2018",
+      "title": "Hereditary",
+      "year": 2018,
+      "director": "Ari Aster",
+      "cast": [
+        "Toni Collette",
+        "Alex Wolff",
+        "Gabriel Byrne"
+      ],
+      "genres": [
+        "Thriller",
+        "Horror",
+        "Mystery"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-cabin-in-the-woods-2011",
+      "title": "The Cabin in the Woods",
+      "year": 2011,
+      "director": "Drew Goddard",
+      "cast": [
+        "Kristen Connolly",
+        "Fran Kranz",
+        "Chris Hemsworth"
+      ],
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-lord-of-the-rings:-the-return-of-the-king-2003",
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen"
+      ],
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-lord-of-the-rings:-the-two-towers-2002",
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "director": "Peter Jackson",
+      "cast": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen"
+      ],
+      "genres": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "civil-war-2024",
+      "title": "Civil War",
+      "year": 2024,
+      "director": "Alex Garland",
+      "cast": [
+        "Kirsten Dunst",
+        "Wagner Moura",
+        "Cailee Spaeny"
+      ],
+      "genres": [
+        "Drama",
+        "War",
+        "Action"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "funny-face-1957",
+      "title": "Funny Face",
+      "year": 1957,
+      "director": "Stanley Donen",
+      "cast": [
+        "Audrey Hepburn",
+        "Fred Astaire",
+        "Kay Thompson"
+      ],
+      "genres": [
+        "Romance",
+        "Music",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "dune:-part-two-2024",
+      "title": "Dune: Part Two",
+      "year": 2024,
+      "director": "Denis Villeneuve",
+      "cast": [
+        "Timothée Chalamet",
+        "Zendaya",
+        "Rebecca Ferguson"
+      ],
+      "genres": [
+        "Adventure",
+        "Science Fiction"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-creator-2023",
+      "title": "The Creator",
+      "year": 2023,
+      "director": "Gareth Edwards",
+      "cast": [
+        "John David Washington",
+        "Madeleine Yuna Voyles",
+        "Gemma Chan"
+      ],
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "maestro-2023",
+      "title": "Maestro",
+      "year": 2023,
+      "director": "Bradley Cooper",
+      "cast": [
+        "Carey Mulligan",
+        "Bradley Cooper",
+        "Matt Bomer"
+      ],
+      "genres": [
+        "Drama",
+        "Music",
+        "Romance"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "anatomy-of-a-fall-2023",
+      "title": "Anatomy of a Fall",
+      "year": 2023,
+      "director": "Justine Triet",
+      "cast": [
+        "Sandra Hüller",
+        "Swann Arlaud",
+        "Milo Machado-Graner"
+      ],
+      "genres": [
+        "Mystery",
+        "Crime",
+        "Thriller"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "island-in-between-2023",
+      "title": "Island in Between",
+      "year": 2023,
+      "director": "S. Leo Chiang",
+      "cast": [
+        "Sen-Po Tung",
+        "Ja-Shin Wu",
+        "Ya-Ping Hu"
+      ],
+      "genres": [
+        "Documentary"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "ninety-five-senses-2022",
+      "title": "Ninety-Five Senses",
+      "year": 2022,
+      "director": "Jerusha Hess",
+      "cast": [
+        "Tim Blake Nelson"
+      ],
+      "genres": [
+        "Drama",
+        "Animation"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "the-after-2023",
+      "title": "The After",
+      "year": 2023,
+      "director": "Misan Harriman",
+      "cast": [
+        "David Oyelowo",
+        "Jessica Kate Plummer",
+        "Amelie Dokubo"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "may-december-2023",
+      "title": "May December",
+      "year": 2023,
+      "director": "Todd Haynes",
+      "cast": [
+        "Natalie Portman",
+        "Julianne Moore",
+        "Charles Melton"
+      ],
+      "genres": [
+        "Drama"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "poor-things-2023",
+      "title": "Poor Things",
+      "year": 2023,
+      "director": "Yorgos Lanthimos",
+      "cast": [
+        "Emma Stone",
+        "Mark Ruffalo",
+        "Willem Dafoe"
+      ],
+      "genres": [
+        "Romance",
+        "Science Fiction",
+        "Comedy"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    },
+    {
+      "id": "quantum-of-solace-2008",
+      "title": "Quantum of Solace",
+      "year": 2008,
+      "director": "Marc Forster",
+      "cast": [
+        "Daniel Craig",
+        "Olga Kurylenko",
+        "Mathieu Amalric"
+      ],
+      "genres": [
+        "Thriller",
+        "Action",
+        "Adventure",
+        "Crime"
+      ],
+      "runtime": null,
+      "poster_url": "https://s.ltrbxd.com/static/img/empty-poster-1000.231946d0.png"
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Why was Seth Rogen your choice for multiple antagonists? The guy played a pickle.",
+      "rating": 1.5,
+      "reviewer": "snyda",
+      "date": "Wed, 5 Mar 2025 14:37:59 +1300",
+      "url": "https://letterboxd.com/snyda/film/fanboys/",
+      "movieId": "fanboys-2009"
+    },
+    {
+      "text": "This review may contain spoilers. This is one step below Indy hiding in the fridge.",
+      "rating": 2.5,
+      "reviewer": "snyda",
+      "date": "Sat, 1 Mar 2025 16:00:02 +1300",
+      "url": "https://letterboxd.com/snyda/film/wander-to-wonder/",
+      "movieId": "wander-to-wonder-2023"
+    },
+    {
+      "text": "Everyone is talking and staring at me like it's Starfield.",
+      "rating": 2.5,
+      "reviewer": "snyda",
+      "date": "Wed, 26 Feb 2025 14:57:30 +1300",
+      "url": "https://letterboxd.com/snyda/film/nickel-boys/",
+      "movieId": "nickel-boys-2024"
+    },
+    {
+      "text": "This review may contain spoilers. You get that sinking feeling and it's proven right, and that sucks.",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Wed, 26 Feb 2025 14:06:59 +1300",
+      "url": "https://letterboxd.com/snyda/film/im-still-here-2024/",
+      "movieId": "i'm-still-here-2024"
+    },
+    {
+      "text": "This review may contain spoilers. I wish they all ended with the same hair like they all picked the same option in the catalogue.",
+      "rating": 2.5,
+      "reviewer": "snyda",
+      "date": "Tue, 25 Feb 2025 16:23:54 +1300",
+      "url": "https://letterboxd.com/snyda/film/beautiful-men-2023/",
+      "movieId": "beautiful-men-2023"
+    },
+    {
+      "text": "I haven't seen expressions like that on an animal since Cats Vs. Dogs",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Sun, 23 Feb 2025 08:54:15 +1300",
+      "url": "https://letterboxd.com/snyda/film/flow-2024/",
+      "movieId": "flow-2024"
+    },
+    {
+      "text": "Forget young beautiful people, I want a reality show about old, gossipy men.",
+      "rating": 4,
+      "reviewer": "snyda",
+      "date": "Fri, 21 Feb 2025 15:07:14 +1300",
+      "url": "https://letterboxd.com/snyda/film/conclave/",
+      "movieId": "conclave-2024"
+    },
+    {
+      "text": "Really liked being able to hear from a lot of different sides of this incident.",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Fri, 21 Feb 2025 12:38:42 +1300",
+      "url": "https://letterboxd.com/snyda/film/i-am-ready-warden/",
+      "movieId": "i-am-ready,-warden-2024"
+    },
+    {
+      "text": "I would always help my sofa. It's been there for me since Day 1.",
+      "rating": 4,
+      "reviewer": "snyda",
+      "date": "Fri, 21 Feb 2025 03:41:49 +1300",
+      "url": "https://letterboxd.com/snyda/film/magic-candies/",
+      "movieId": "magic-candies-2024"
+    },
+    {
+      "text": "The intensity of Whiplash packed into a 1st grade classroom.",
+      "rating": 4,
+      "reviewer": "snyda",
+      "date": "Wed, 19 Feb 2025 16:27:59 +1300",
+      "url": "https://letterboxd.com/snyda/film/instruments-of-a-beating-heart/",
+      "movieId": "instruments-of-a-beating-heart-2024"
+    },
+    {
+      "text": "This review may contain spoilers. Kinda like the Last Jedi. Not really the Last one.",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Wed, 19 Feb 2025 16:41:49 +1300",
+      "url": "https://letterboxd.com/snyda/film/the-last-ranger/",
+      "movieId": "the-last-ranger-2024"
+    },
+    {
+      "text": "At what point do you just buy another grand piano?",
+      "rating": 1.5,
+      "reviewer": "snyda",
+      "date": "Mon, 17 Feb 2025 16:48:03 +1300",
+      "url": "https://letterboxd.com/snyda/film/maria-2024/",
+      "movieId": "maria-2024"
+    },
+    {
+      "text": "Really wanted it to end with Roz starting a War with the Machines like the Terminator franchise but I guess this makes more sense.",
+      "rating": 4.5,
+      "reviewer": "snyda",
+      "date": "Sun, 16 Feb 2025 11:52:28 +1300",
+      "url": "https://letterboxd.com/snyda/film/the-wild-robot/",
+      "movieId": "the-wild-robot-2024"
+    },
+    {
+      "text": "This review may contain spoilers. That's a SpongeBob full body cast if I ever saw one!",
+      "rating": 4,
+      "reviewer": "snyda",
+      "date": "Sun, 16 Feb 2025 06:00:55 +1300",
+      "url": "https://letterboxd.com/snyda/film/a-different-man/",
+      "movieId": "a-different-man-2024"
+    },
+    {
+      "text": "After brain implants, you know the next one is gonna be RGB LEDs",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Wed, 12 Feb 2025 10:21:43 +1300",
+      "url": "https://letterboxd.com/snyda/film/yuck/",
+      "movieId": "yuck!-2024"
+    },
+    {
+      "text": "Where'd they get those Baboons? Cabela's Dangerous Hunts 2013?",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Sun, 9 Feb 2025 16:20:18 +1300",
+      "url": "https://letterboxd.com/snyda/film/gladiator-ii/",
+      "movieId": "gladiator-ii-2024"
+    },
+    {
+      "text": "I liked the little animations, same idea as Better Man, softens the darker moments, but this was probably way cheaper.",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Wed, 5 Feb 2025 14:10:15 +1300",
+      "url": "https://letterboxd.com/snyda/film/elton-john-never-too-late/",
+      "movieId": "elton-john:-never-too-late-2024"
+    },
+    {
+      "text": "I would get her a Bass Pro Shops hat for her Retirement Party.",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Tue, 4 Feb 2025 16:50:39 +1300",
+      "url": "https://letterboxd.com/snyda/film/the-only-girl-in-the-orchestra/",
+      "movieId": "the-only-girl-in-the-orchestra-2023"
+    },
+    {
+      "text": "This review may contain spoilers. What did they do with the people they caught in nets? Did they just release them afterwards like with Tomb Raider?",
+      "rating": 2,
+      "reviewer": "snyda",
+      "date": "Mon, 3 Feb 2025 15:42:29 +1300",
+      "url": "https://letterboxd.com/snyda/film/kingdom-of-the-planet-of-the-apes/",
+      "movieId": "kingdom-of-the-planet-of-the-apes-2024"
+    },
+    {
+      "text": "This review may contain spoilers. Man if an avalanche took out my camp, I'm going home.",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Sun, 2 Feb 2025 17:47:31 +1300",
+      "url": "https://letterboxd.com/snyda/film/keep-it-burning-2024/",
+      "movieId": "keep-it-burning-2024"
+    },
+    {
+      "text": "I liked when he went through the waterfall. That changed it up.",
+      "rating": 1,
+      "reviewer": "snyda",
+      "date": "Sun, 2 Feb 2025 15:30:29 +1300",
+      "url": "https://letterboxd.com/snyda/film/wolf-of-wingsuit/",
+      "movieId": "wolf-of-wingsuit-unknown"
+    },
+    {
+      "text": "Definitely would have been worse if they turned him into a CGI ape.",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Sun, 2 Feb 2025 09:42:15 +1300",
+      "url": "https://letterboxd.com/snyda/film/a-complete-unknown/",
+      "movieId": "a-complete-unknown-2024"
+    },
+    {
+      "text": "This review may contain spoilers. First Scene Ends: Uh oh, Tekla isn't gonna like this one. Second scene starts and there's a cat: Nevermind, she'll be good.",
+      "rating": 3.5,
+      "reviewer": "snyda",
+      "date": "Fri, 31 Jan 2025 16:02:35 +1300",
+      "url": "https://letterboxd.com/snyda/film/nosferatu-2024/",
+      "movieId": "nosferatu-2024"
+    },
+    {
+      "text": "This review may contain spoilers. So are Riley's parents just really immature?",
+      "rating": 2,
+      "reviewer": "snyda",
+      "date": "Wed, 29 Jan 2025 14:30:04 +1300",
+      "url": "https://letterboxd.com/snyda/film/inside-out-2-2024/",
+      "movieId": "inside-out-2-2024"
+    },
+    {
+      "text": "The best part was seeing how a \"LIVE\" broadcast worked in the 70s, from the super imposed graphics to running back with film reels to get developed.  ABC Sports walked so F1 could run.",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Mon, 27 Jan 2025 16:19:46 +1300",
+      "url": "https://letterboxd.com/snyda/film/september-5/",
+      "movieId": "september-5-2024"
+    },
+    {
+      "text": "Calm down everyone! No one is cancelling any mail!",
+      "rating": 1.5,
+      "reviewer": "snyda",
+      "date": "Fri, 24 Jan 2025 16:02:11 +1300",
+      "url": "https://letterboxd.com/snyda/film/the-six-triple-eight-2024/",
+      "movieId": "the-six-triple-eight-2024"
+    },
+    {
+      "text": "I said \"Mom's Spaghetti\" and so did Ed, so I think we'd get along.",
+      "rating": 3,
+      "reviewer": "snyda",
+      "date": "Wed, 22 Jan 2025 16:25:58 +1300",
+      "url": "https://letterboxd.com/snyda/film/sugarcane/",
+      "movieId": "sugarcane-2024"
+    },
+    {
+      "text": "the red visuals and set pieces are amazing but the movie just doesn’t work for me at all (i love it anyways). let’s just praise the good: indiana in his ripped shirt on the bridge holding a machete! mine carts! white suit! heart yeet! mind control!",
+      "rating": 3,
+      "reviewer": "danielbrenneman",
+      "date": "Tue, 4 Mar 2025 17:52:54 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/indiana-jones-and-the-temple-of-doom/1/",
+      "movieId": "indiana-jones-and-the-temple-of-doom-1984"
+    },
+    {
+      "text": "this monkey kinda talks like ryan reynolds  despite not knowing who robbie williams is, i am a greatest showman fanatic. this movie was okay! the yacht sequence was really nice and you know what— when dads come on screen, imma emote.",
+      "rating": 3,
+      "reviewer": "danielbrenneman",
+      "date": "Fri, 21 Feb 2025 10:54:43 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/better-man-2024/",
+      "movieId": "better-man-2024"
+    },
+    {
+      "text": "love elliot yelling “no charisma! no charisma!” which today equates to “no rizz! no rizz!” time is a circle",
+      "rating": 4.5,
+      "reviewer": "danielbrenneman",
+      "date": "Sat, 15 Feb 2025 17:58:55 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/et-the-extra-terrestrial/1/",
+      "movieId": "e.t.-the-extra-terrestrial-1982"
+    },
+    {
+      "text": "as spielberg rightly points out: all of us, all children of the galaxy, share a love for tuba sounds",
+      "rating": 3.5,
+      "reviewer": "danielbrenneman",
+      "date": "Mon, 27 Jan 2025 15:54:35 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/close-encounters-of-the-third-kind/",
+      "movieId": "close-encounters-of-the-third-kind-1977"
+    },
+    {
+      "text": "was waiting for emilia perez to john wick her way out of there but sadly it was not meant to be",
+      "rating": 2,
+      "reviewer": "danielbrenneman",
+      "date": "Fri, 24 Jan 2025 18:02:08 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/emilia-perez/",
+      "movieId": "emilia-pérez-2024"
+    },
+    {
+      "text": "This review may contain spoilers. going to make a fanedit of this film that leaves the fate of the cops at the radio station ambiguous",
+      "rating": 2,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 25 Dec 2024 19:13:23 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/jingle-all-the-way/1/",
+      "movieId": "jingle-all-the-way-1996"
+    },
+    {
+      "text": "had to ask my grandparents who the guy opposite bing crosby was but when the brother from west side story popped up as a background dancer in one scene for one second i identified him immediately",
+      "rating": 4,
+      "reviewer": "danielbrenneman",
+      "date": "Fri, 13 Dec 2024 16:11:52 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/white-christmas/",
+      "movieId": "white-christmas-1954"
+    },
+    {
+      "text": "movie was fine. the movie peaked at the mission impossible trailer!!!!!! so hyped!!!! putting aside sharks and water in the arena, ridley’s like they also had to fight werewolves — sure…",
+      "rating": 3,
+      "reviewer": "danielbrenneman",
+      "date": "Sun, 1 Dec 2024 09:09:48 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/gladiator-ii/",
+      "movieId": "gladiator-ii-2024"
+    },
+    {
+      "text": "left me with so many questionswhy shizzwhy does it look so greybut im wicked pilled now!",
+      "rating": 3,
+      "reviewer": "danielbrenneman",
+      "date": "Tue, 26 Nov 2024 17:14:39 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/wicked-2024/",
+      "movieId": "wicked-2024"
+    },
+    {
+      "text": "This review may contain spoilers. doubled down and rewatched with sarah at cambridge cineplex after getting back from my kitchener vip showing. great movie — wanted to watch sarah realize how funny it is and laugh. really washes the taste of Here out of my mouth from last week. also did take edible.",
+      "rating": 4.5,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 20 Nov 2024 18:20:16 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/anora/1/",
+      "movieId": "anora-2024"
+    },
+    {
+      "text": "there were five people in the theatre and three of them were old ladies who talked so loudly throughout the whole movie and i went back and forth between being annoyed but also really invested in their conversation about how thick brick walls actually are, dining rooms, and their friend who was on vacation in pennsylvania. i didn’t like when they said “oh, blacks moved in” and complained every time we cut to the native americans. they really seemed to shift between ragging on this movie deservedly but also like they loved tom hanks but then were always vocally confused when we jumped through time. bad experience but, to be fair, it was a bad movie. the other two people in the theatre kept shushing and eventually yelled at them but i think they were hard of hearing and nothing happened. the CGI de-aging didn’t scare me too much but i really didn’t like the face morph transitions.",
+      "rating": 1.5,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 13 Nov 2024 17:04:56 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/here-2024/",
+      "movieId": "here-2024"
+    },
+    {
+      "text": "love a movie that is about a processthis movie deliverssound designer went a little crazy though",
+      "rating": 3.5,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 13 Nov 2024 14:39:40 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/conclave/",
+      "movieId": "conclave-2024"
+    },
+    {
+      "text": "i’ve been slowly making my way through burton’s filmography and wanted to revisit this in case my initial take was impacted by watching it as homework for the Giamatti podcast. the opposite happened because Paul is obviously a shining light, but it’s way worse than i even remembered. i love apes and this movie made me hate them. the ending though… it’s BEPPO",
+      "rating": 1,
+      "reviewer": "danielbrenneman",
+      "date": "Tue, 5 Nov 2024 11:26:58 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/planet-of-the-apes-2001/1/",
+      "movieId": "planet-of-the-apes-2001"
+    },
+    {
+      "text": "sarah and andrea’s first time seeing this. took an edible and i was really in awe. sat beside jesus at the theatre. wore shrek ears and won a tote bag.",
+      "rating": 4,
+      "reviewer": "danielbrenneman",
+      "date": "Sat, 2 Nov 2024 01:47:18 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/the-rocky-horror-picture-show/",
+      "movieId": "the-rocky-horror-picture-show-1975"
+    },
+    {
+      "text": "i don’t think the movie totally works and the story really looses focus in the last hour but it’s SO LUSH. incredible performances, they’re hot, great vibes!!",
+      "rating": 3.5,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 30 Oct 2024 16:37:23 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/priscilla/",
+      "movieId": "priscilla-2023"
+    },
+    {
+      "text": "nothing’s sadder than a movie that really feels like it should work well together but just doesn’t",
+      "rating": 2.5,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 30 Oct 2024 12:12:44 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/mars-attacks/",
+      "movieId": "mars-attacks!-1996"
+    },
+    {
+      "text": "awkward that i didn’t realize this was based on a real person until after the “what happened afterwards” end credits. might deserve a rewatch.",
+      "rating": 4,
+      "reviewer": "danielbrenneman",
+      "date": "Wed, 30 Oct 2024 12:14:52 +1300",
+      "url": "https://letterboxd.com/danielbrenneman/film/ed-wood/",
+      "movieId": "ed-wood-1994"
+    },
+    {
+      "text": "this was perfect timing to watch a movie about a small cat trying to survive because Adam has spent all week making fun of me for trying to trap the stray cat that is hiding under our house so I can bring it to the humane society. In the first ten minutes of the movie I said \"this is just like what that poor cat has to deal with\" and he looked so sad that I think he's on board with my plan now",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Sun, 23 Feb 2025 11:14:13 +1300",
+      "url": "https://letterboxd.com/calket/film/flow-2024/",
+      "movieId": "flow-2024"
+    },
+    {
+      "text": "gonna send a letter to my friend who recently became a nun to ask if the people at her monastery are as cliquey as this",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Fri, 21 Feb 2025 15:15:57 +1300",
+      "url": "https://letterboxd.com/calket/film/conclave/",
+      "movieId": "conclave-2024"
+    },
+    {
+      "text": "I'll be honest, the special effects were just meh for me. I didn't get much out of them. Great songs tho!!",
+      "rating": 3,
+      "reviewer": "calket",
+      "date": "Thu, 20 Feb 2025 16:43:46 +1300",
+      "url": "https://letterboxd.com/calket/film/wicked-2024/",
+      "movieId": "wicked-2024"
+    },
+    {
+      "text": "This review may contain spoilers. glad I finally know what captcha stands for",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Wed, 19 Feb 2025 15:33:33 +1300",
+      "url": "https://letterboxd.com/calket/film/im-not-a-robot-2023/",
+      "movieId": "i'm-not-a-robot-2023"
+    },
+    {
+      "text": "definitely wasn't Sully flying that plane.  spent the last hour of this crying, loved it so much. the music! the art! the love!!!!",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Sun, 16 Feb 2025 11:56:24 +1300",
+      "url": "https://letterboxd.com/calket/film/the-wild-robot/",
+      "movieId": "the-wild-robot-2024"
+    },
+    {
+      "text": "really thought those monkeys from the beginning were going to come back in a major way",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Sun, 9 Feb 2025 16:20:18 +1300",
+      "url": "https://letterboxd.com/calket/film/gladiator-ii/",
+      "movieId": "gladiator-ii-2024"
+    },
+    {
+      "text": "This review may contain spoilers. the \"what the hell\" from the Helen Keller ass bitch was incredible",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Fri, 7 Feb 2025 15:54:27 +1300",
+      "url": "https://letterboxd.com/calket/film/anora/",
+      "movieId": "anora-2024"
+    },
+    {
+      "text": "made me wish I was watching Avatar 2 the way of water",
+      "rating": 2,
+      "reviewer": "calket",
+      "date": "Mon, 3 Feb 2025 15:45:48 +1300",
+      "url": "https://letterboxd.com/calket/film/kingdom-of-the-planet-of-the-apes/",
+      "movieId": "kingdom-of-the-planet-of-the-apes-2024"
+    },
+    {
+      "text": "A bonus from this was watching my mom's jaw drop more and more with each Sick Move",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Sun, 2 Feb 2025 17:48:21 +1300",
+      "url": "https://letterboxd.com/calket/film/the-streif/",
+      "movieId": "the-streif-unknown"
+    },
+    {
+      "text": "makes me want to climb more cool things with my dad!!!!",
+      "rating": 3.5,
+      "reviewer": "calket",
+      "date": "Sun, 2 Feb 2025 17:46:38 +1300",
+      "url": "https://letterboxd.com/calket/film/keep-it-burning-2024/",
+      "movieId": "keep-it-burning-2024"
+    },
+    {
+      "text": "At first I was like \"hmmm\" about the dad pushing his daughter to toughen up but then I remembered the time when I was sad after a judge at a dance competition was mean to me onstage and when we were walking back to the car my dad told me \"by the time we finish walking through this tunnel you're gonna stop crying\" and it worked so maybe tough love is the way to go",
+      "rating": 3,
+      "reviewer": "calket",
+      "date": "Sun, 2 Feb 2025 15:33:36 +1300",
+      "url": "https://letterboxd.com/calket/film/of-a-lifetime/",
+      "movieId": "of-a-lifetime-2024"
+    },
+    {
+      "text": "I want a wolf of wallstreet remake where nothing is changed except Leonardo DiCaprio is wearing one of these suits the entire time",
+      "rating": 3,
+      "reviewer": "calket",
+      "date": "Sun, 2 Feb 2025 15:30:20 +1300",
+      "url": "https://letterboxd.com/calket/film/wolf-of-wingsuit/",
+      "movieId": "wolf-of-wingsuit-unknown"
+    },
+    {
+      "text": "calling it now that at my next jaw physio appointment there will be a measurable decline in the progress I've made on treating my TMJ issues because of how tightly clenched my jaw was throughout the movie. this was TOO SPOOKY for me to have watched in theatres",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Fri, 31 Jan 2025 16:02:45 +1300",
+      "url": "https://letterboxd.com/calket/film/nosferatu-2024/",
+      "movieId": "nosferatu-2024"
+    },
+    {
+      "text": "wish I had seen the first one so I could understand what was going on :/ without all the background on the characters this really went over my head",
+      "rating": 3,
+      "reviewer": "calket",
+      "date": "Wed, 29 Jan 2025 14:36:21 +1300",
+      "url": "https://letterboxd.com/calket/film/inside-out-2-2024/",
+      "movieId": "inside-out-2-2024"
+    },
+    {
+      "text": "almost fell out of my seat the way I was on the edge of it",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Mon, 27 Jan 2025 16:27:14 +1300",
+      "url": "https://letterboxd.com/calket/film/september-5/",
+      "movieId": "september-5-2024"
+    },
+    {
+      "text": "powerful in the moments of silence and powerful in the moments of song and powerful in all the moments in between",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Wed, 22 Jan 2025 15:53:06 +1300",
+      "url": "https://letterboxd.com/calket/film/sugarcane/",
+      "movieId": "sugarcane-2024"
+    },
+    {
+      "text": "absolutely incredible. touched a lot of pieces of me and man did I feel every one of those points of contact",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Mon, 20 Jan 2025 16:32:03 +1300",
+      "url": "https://letterboxd.com/calket/film/a-real-pain/",
+      "movieId": "a-real-pain-2024"
+    },
+    {
+      "text": "\"ChatGPT, which is so good at mimicking humans we might as well fucking kill ourselves\" had me IN TEARS. she's cunked it again, folks!",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Wed, 15 Jan 2025 12:58:42 +1300",
+      "url": "https://letterboxd.com/calket/film/cunk-on-life/",
+      "movieId": "cunk-on-life-2024"
+    },
+    {
+      "text": "Kept waiting for DeBrie Bardeaux to show up for this Straightbait",
+      "rating": 2.5,
+      "reviewer": "calket",
+      "date": "Thu, 9 Jan 2025 16:24:15 +1300",
+      "url": "https://letterboxd.com/calket/film/challengers/",
+      "movieId": "challengers-2024"
+    },
+    {
+      "text": "at no point did it go where I thought it would but I am not mad about it and actually really liked this",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Sun, 5 Jan 2025 16:50:28 +1300",
+      "url": "https://letterboxd.com/calket/film/emilia-perez/",
+      "movieId": "emilia-pérez-2024"
+    },
+    {
+      "text": "This review may contain spoilers. almost cried at what the norbots did to gromit's beautiful garden :'(",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Sun, 5 Jan 2025 10:53:53 +1300",
+      "url": "https://letterboxd.com/calket/film/wallace-gromit-vengeance-most-fowl/",
+      "movieId": "wallace-&-gromit:-vengeance-most-fowl-2024"
+    },
+    {
+      "text": "This review may contain spoilers. definitely feel like there could have been at least one pitbull song but the DJ Khaled was good too",
+      "rating": 3.5,
+      "reviewer": "calket",
+      "date": "Wed, 1 Jan 2025 17:05:56 +1300",
+      "url": "https://letterboxd.com/calket/film/the-fall-guy-2024/",
+      "movieId": "the-fall-guy-2024"
+    },
+    {
+      "text": "This review may contain spoilers. what happened to her other cats at the end of the movie????",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Tue, 31 Dec 2024 18:33:24 +1300",
+      "url": "https://letterboxd.com/calket/film/the-batman/",
+      "movieId": "the-batman-2022"
+    },
+    {
+      "text": "absolutely incredible story of resistance and such a powerful documentary. definitely a must watch",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Sat, 16 Nov 2024 16:32:32 +1300",
+      "url": "https://letterboxd.com/calket/film/yintah/",
+      "movieId": "yintah-2024"
+    },
+    {
+      "text": "always a classic but everytime Timothée showed up Adam yelled \"LISAN AL GAIB\" and it made me and the cat jump, interrupting this most perfect film",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Fri, 8 Nov 2024 16:22:32 +1300",
+      "url": "https://letterboxd.com/calket/film/lady-bird/1/",
+      "movieId": "lady-bird-2017"
+    },
+    {
+      "text": "gonna be trying to convince Adam that \"can't fight this feeling\" by REO Speedwagon should be our first dance song after this",
+      "rating": 5,
+      "reviewer": "calket",
+      "date": "Sun, 27 Oct 2024 05:05:16 +1300",
+      "url": "https://letterboxd.com/calket/film/lisa-frankenstein/",
+      "movieId": "lisa-frankenstein-2024"
+    },
+    {
+      "text": "this was like avatar 2: the way of water except in the past instead of the future and so much worse in every single way",
+      "rating": null,
+      "reviewer": "calket",
+      "date": "Wed, 18 Sep 2024 13:36:00 +1200",
+      "url": "https://letterboxd.com/calket/film/10000-bc/",
+      "movieId": "10,000-bc-2008"
+    },
+    {
+      "text": "this reminds me of when my friend Alice was working at an arts organization downtown and one day I was hanging out with her and some other pals and she was telling us that that day she found a needle in the bathroom at her work and for whatever reason she picked it up and it was like some mysterious force took over her and she wouldn't put it in the sharps disposal bin even when her supervisor was begging her to put it down and throw it out she wouldn't let go of the used needle from the bathroom floor and her supervisor was literally chasing her around the building until she finally cornered Alice, who yelled \"I'm not throwing away my shot\"  and we were all staring at her in horror until it clicked that she was making a hamilton joke",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Mon, 2 Sep 2024 14:36:59 +1200",
+      "url": "https://letterboxd.com/calket/film/hamilton-2020/",
+      "movieId": "hamilton-2020"
+    },
+    {
+      "text": "I love the 80s - everyone's just sweaty and sexy and there's so much tension... they don't make 'em like that anymore!!",
+      "rating": 4,
+      "reviewer": "calket",
+      "date": "Sun, 1 Sep 2024 14:01:45 +1200",
+      "url": "https://letterboxd.com/calket/film/romancing-the-stone/",
+      "movieId": "romancing-the-stone-1984"
+    },
+    {
+      "text": "A modern day warrior mean mean stride todays Tom Sawyer mean mean guy 🫶🏻",
+      "rating": 3.5,
+      "reviewer": "ryjohnst",
+      "date": "Mon, 24 Feb 2025 17:38:05 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/i-love-you-man/",
+      "movieId": "i-love-you,-man-2009"
+    },
+    {
+      "text": "So good!! Loved this movie sm. Kieran you’re everything.",
+      "rating": 4,
+      "reviewer": "ryjohnst",
+      "date": "Sat, 25 Jan 2025 05:21:29 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/a-real-pain/",
+      "movieId": "a-real-pain-2024"
+    },
+    {
+      "text": "Ok just saw this for the first time. Amazing !!!!!!",
+      "rating": 4.5,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 23 Jan 2025 06:43:14 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/hercules-1997/",
+      "movieId": "hercules-1997"
+    },
+    {
+      "text": "Been a few weeks since i watched it and can’t remember anything ab it 🤷‍♀️",
+      "rating": 2.5,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 23 Jan 2025 06:41:10 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/bad-moms/",
+      "movieId": "bad-moms-2016"
+    },
+    {
+      "text": "Timmy Tim Tim Timmy you’ve gone and done it again. GOAT!!! Movie was good too.",
+      "rating": 4,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 23 Jan 2025 06:39:24 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/a-complete-unknown/",
+      "movieId": "a-complete-unknown-2024"
+    },
+    {
+      "text": "Does it get any better than this? We were loling for real. I do think I could have edited and scored this movie better than whoever did it. i have never been faced with such blatantly poor editing WHICH only added to my immense enjoyment of this film.",
+      "rating": 3.5,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 23 Jan 2025 06:38:23 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/the-other-woman-2014/",
+      "movieId": "the-other-woman-2014"
+    },
+    {
+      "text": "Can’t tell if I loved it or hated it but I think I loved it?",
+      "rating": 2.5,
+      "reviewer": "ryjohnst",
+      "date": "Sat, 14 Dec 2024 08:50:43 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/love-the-coopers/",
+      "movieId": "love-the-coopers-2015"
+    },
+    {
+      "text": "When letterboxed asked Jeff goldblum his 4 favourites and he started with wicked (and then all of his other movies) he was justified.  Absolutely amazing. Need to rewatch. Potential for a 5 ⭐️ on second watch, i think! Ariana’s vocals were life changing. Ariana for best actress there i said it.",
+      "rating": 4.5,
+      "reviewer": "ryjohnst",
+      "date": "Wed, 11 Dec 2024 11:22:27 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/wicked-2024/",
+      "movieId": "wicked-2024"
+    },
+    {
+      "text": "I love hot frosty!!!! Literally so emosh from start to finish 😭 lmao. I’m just a girl.",
+      "rating": 3,
+      "reviewer": "ryjohnst",
+      "date": "Tue, 19 Nov 2024 14:40:16 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/hot-frosty/",
+      "movieId": "hot-frosty-2024"
+    },
+    {
+      "text": "Everything i need in a movie!! Truly.  also needtobreathe song in the credits was not on my bingo card for this one. 🙏✝️ slay Christian rock kings !!",
+      "rating": 3,
+      "reviewer": "ryjohnst",
+      "date": "Tue, 5 Nov 2024 13:56:42 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/when-in-rome-2010/",
+      "movieId": "when-in-rome-2010"
+    },
+    {
+      "text": "Loved the title sequence Everything else was horrid",
+      "rating": 2,
+      "reviewer": "ryjohnst",
+      "date": "Fri, 25 Oct 2024 07:13:32 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/deadpool-wolverine/",
+      "movieId": "deadpool-&-wolverine-2024"
+    },
+    {
+      "text": "Major meh. Steve and Marty together is warm and fuzzy.",
+      "rating": 2,
+      "reviewer": "ryjohnst",
+      "date": "Fri, 25 Oct 2024 07:09:10 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/father-of-the-bride-1991/",
+      "movieId": "father-of-the-bride-1991"
+    },
+    {
+      "text": "This movie made me bawl my eyes out. I am in love w Robert DeNiro holy cow.",
+      "rating": 5,
+      "reviewer": "ryjohnst",
+      "date": "Mon, 8 Jul 2024 07:34:05 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/the-intern-2015/",
+      "movieId": "the-intern-2015"
+    },
+    {
+      "text": "Sure! The Anne Hathaway version of this was better.",
+      "rating": 2.5,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 4 Jul 2024 01:48:31 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/a-family-affair-2024-1/",
+      "movieId": "a-family-affair-2024"
+    },
+    {
+      "text": "Love a holiday movie with an ensemble cast sue me.",
+      "rating": 3,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 16 May 2024 06:12:33 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/mothers-day-2016/",
+      "movieId": "mother's-day-2016"
+    },
+    {
+      "text": "Just watched this and can’t remember anything about the movie so it’s getting a 2.5.",
+      "rating": 2.5,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 16 May 2024 06:10:31 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/click/",
+      "movieId": "click-2006"
+    },
+    {
+      "text": "Now THIS is a movie!!!! 🍿🏈 Fonda + Tomlin = perfection every time.",
+      "rating": 4,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 16 May 2024 06:09:28 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/80-for-brady/",
+      "movieId": "80-for-brady-2023"
+    },
+    {
+      "text": "Blech. Could not care about the characters or the story. Julia Fox slayed tho.",
+      "rating": 2,
+      "reviewer": "ryjohnst",
+      "date": "Thu, 16 May 2024 06:07:55 +1200",
+      "url": "https://letterboxd.com/ryjohnst/film/uncut-gems/",
+      "movieId": "uncut-gems-2019"
+    },
+    {
+      "text": "Really well done. The animation style feels like home. A little slow at times but very sweet.",
+      "rating": 3,
+      "reviewer": "ryjohnst",
+      "date": "Sun, 10 Mar 2024 14:33:02 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/robot-dreams/",
+      "movieId": "robot-dreams-2023"
+    },
+    {
+      "text": "Very funny and fun to watch. This is my last Oscar movie on my list and a good one to end it with. I’m excited to go back to watching TV on Monday. New season of curb ur enthusiasm + season 1 of succession are top of the list. Where should i be submitting my reviews?",
+      "rating": 3.5,
+      "reviewer": "ryjohnst",
+      "date": "Sun, 10 Mar 2024 14:32:05 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/american-fiction/",
+      "movieId": "american-fiction-2023"
+    },
+    {
+      "text": "adored the animation. Didn’t have subtitles so can’t speak for the story lol",
+      "rating": 3,
+      "reviewer": "ryjohnst",
+      "date": "Fri, 8 Mar 2024 15:58:24 +1300",
+      "url": "https://letterboxd.com/ryjohnst/film/our-uniform/",
+      "movieId": "our-uniform-2023"
+    },
+    {
+      "text": "Beautiful! Did read the book so was prepared for the ending - I’m not entirely convinced the POV style was necessary but i did get used to it eventually",
+      "rating": 4,
+      "reviewer": "maggiecrawford",
+      "date": "Mon, 3 Mar 2025 08:36:26 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/nickel-boys/1/",
+      "movieId": "nickel-boys-2024"
+    },
+    {
+      "text": "Ending was a little too gotcha!!! for me.. but still loved the drama",
+      "rating": 4,
+      "reviewer": "maggiecrawford",
+      "date": "Sun, 2 Mar 2025 12:04:48 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/conclave/",
+      "movieId": "conclave-2024"
+    },
+    {
+      "text": "Too much yelling in the middle! But really very good I liked it a lot!",
+      "rating": 4,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 27 Feb 2025 16:27:34 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/anora/",
+      "movieId": "anora-2024"
+    },
+    {
+      "text": "I think if u were gonna get a hair transplant it would be so nice to go with your brothers ❤️",
+      "rating": 3,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 20 Feb 2025 08:08:02 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/beautiful-men-2023/",
+      "movieId": "beautiful-men-2023"
+    },
+    {
+      "text": "Very beautiful! I did find the animation style a little canva/crash course-y",
+      "rating": 3.5,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 20 Feb 2025 04:49:59 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/in-the-shadow-of-the-cypress/",
+      "movieId": "in-the-shadow-of-the-cypress-2023"
+    },
+    {
+      "text": "Like why were they so unprepared I genuinely don’t get it",
+      "rating": 1.5,
+      "reviewer": "maggiecrawford",
+      "date": "Tue, 4 Feb 2025 15:25:27 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/saturday-night-2024/",
+      "movieId": "saturday-night-2024"
+    },
+    {
+      "text": "Saw this w dev and he kept being like ohhh curse of strahd spoiler! Clue for curse of strahd! Which was really fun",
+      "rating": 4,
+      "reviewer": "maggiecrawford",
+      "date": "Wed, 8 Jan 2025 03:49:31 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/nosferatu-2024/",
+      "movieId": "nosferatu-2024"
+    },
+    {
+      "text": "Forgot to review this but honestly thought it was quite bad… watched with Shannon tho ❤️",
+      "rating": 2,
+      "reviewer": "maggiecrawford",
+      "date": "Wed, 8 Jan 2025 01:49:00 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/woman-of-the-hour/",
+      "movieId": "woman-of-the-hour-2023"
+    },
+    {
+      "text": "Like definitely pretty but I just did not connect w this at all",
+      "rating": 2.5,
+      "reviewer": "maggiecrawford",
+      "date": "Sat, 30 Nov 2024 16:52:07 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/columbus-2017/",
+      "movieId": "columbus-2017"
+    },
+    {
+      "text": "I’m holding space I’m finding power in it I love wicked!!!!!!!!!!!!",
+      "rating": 5,
+      "reviewer": "maggiecrawford",
+      "date": "Sun, 24 Nov 2024 17:38:43 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/wicked-2024/",
+      "movieId": "wicked-2024"
+    },
+    {
+      "text": "Violet and I watched this movie like 2 hours ago and I was so mad at it when we watched it and now I’ve already completely forgotten it",
+      "rating": 1,
+      "reviewer": "maggiecrawford",
+      "date": "Sun, 17 Nov 2024 10:38:01 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/my-old-ass/",
+      "movieId": "my-old-ass-2024"
+    },
+    {
+      "text": "Crazy fun … had a rly bad tummy ache watching this tho that was unrelated",
+      "rating": 4,
+      "reviewer": "maggiecrawford",
+      "date": "Fri, 1 Nov 2024 01:52:11 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/evil-dead-ii/",
+      "movieId": "evil-dead-ii-1987"
+    },
+    {
+      "text": "She is my fall inspo for real - I loved this a lot!!!",
+      "rating": 4.5,
+      "reviewer": "maggiecrawford",
+      "date": "Sun, 15 Sep 2024 13:39:18 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/winter-in-sokcho/",
+      "movieId": "winter-in-sokcho-2024"
+    },
+    {
+      "text": "Beautiful but the first half was really disjointed! It did come together near the end tho and I do wanna read the book. Also world premiere! Crazy!",
+      "rating": 3,
+      "reviewer": "maggiecrawford",
+      "date": "Mon, 9 Sep 2024 00:31:31 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/pedro-paramo-2024/",
+      "movieId": "pedro-páramo-2024"
+    },
+    {
+      "text": "I feel like at the end sigourney weaver was rlly giving a Kristen Stewart in love lies bleeding kinda vibe!! Fun puppets and special effects",
+      "rating": 3.5,
+      "reviewer": "maggiecrawford",
+      "date": "Wed, 28 Aug 2024 14:19:33 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/alien/",
+      "movieId": "alien-1979"
+    },
+    {
+      "text": "I love when they fall down the stairs for forever that is awesome",
+      "rating": 5,
+      "reviewer": "maggiecrawford",
+      "date": "Tue, 27 Aug 2024 05:51:58 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/death-becomes-her/",
+      "movieId": "death-becomes-her-1992"
+    },
+    {
+      "text": "Lise was able to accurately predict every single plot point of this down to what swimsuit she would wear and that’s the only reason I had fun watching it",
+      "rating": null,
+      "reviewer": "maggiecrawford",
+      "date": "Mon, 27 May 2024 14:01:37 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/float-2023/",
+      "movieId": "float-2023"
+    },
+    {
+      "text": "When he snagged his stool and pulled it closer ………… 🥵🥵🥵🥵🥵",
+      "rating": 5,
+      "reviewer": "maggiecrawford",
+      "date": "Tue, 7 May 2024 16:56:44 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/challengers/",
+      "movieId": "challengers-2024"
+    },
+    {
+      "text": "Air Canada has an incredible selection tbh?? This was beautiful!!!!",
+      "rating": 5,
+      "reviewer": "maggiecrawford",
+      "date": "Sun, 5 May 2024 02:48:38 +1200",
+      "url": "https://letterboxd.com/maggiecrawford/film/ru-2023/",
+      "movieId": "ru-2023"
+    },
+    {
+      "text": "Sooooo fun. Loved the 5  solid minutes of production studio logo animations at the beginning also that made me laugh",
+      "rating": 3.5,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 4 Apr 2024 16:14:06 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/late-night-with-the-devil/",
+      "movieId": "late-night-with-the-devil-2023"
+    },
+    {
+      "text": "Like guys im confused help me out what am I missing here!!! Hes so sleazy?? I think Paul mescal could maybe save that role but only if they also rewrote everything",
+      "rating": 1.5,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 21 Mar 2024 14:29:40 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/before-sunrise/",
+      "movieId": "before-sunrise-1995"
+    },
+    {
+      "text": "He has such a That Girl morning routine I love him",
+      "rating": 4.5,
+      "reviewer": "maggiecrawford",
+      "date": "Wed, 13 Mar 2024 09:59:13 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/perfect-days-2023/",
+      "movieId": "perfect-days-2023"
+    },
+    {
+      "text": "Simply loved it! Im such a sucker for a New England boarding school campus setting ugh and in the winter so cozy …. I teared up, I did!!",
+      "rating": 4.5,
+      "reviewer": "maggiecrawford",
+      "date": "Wed, 7 Feb 2024 15:25:34 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/the-holdovers/",
+      "movieId": "the-holdovers-2023"
+    },
+    {
+      "text": "Zac Efron was v good! It was so sad that I kept wanting it to be over! Had hallmark vibes a little? Just a tad clunky… But good",
+      "rating": 3,
+      "reviewer": "maggiecrawford",
+      "date": "Thu, 1 Feb 2024 12:35:06 +1300",
+      "url": "https://letterboxd.com/maggiecrawford/film/the-iron-claw-2023/",
+      "movieId": "the-iron-claw-2023"
+    },
+    {
+      "text": "This review may contain spoilers. Thankfully, it only took me and my best friend 3 years to tell each other we’re in love…I guess our movie would only be 30mins",
+      "rating": 4,
+      "reviewer": "gwbull",
+      "date": "Mon, 20 Feb 2023 15:51:04 +1300",
+      "url": "https://letterboxd.com/gwbull/film/your-place-or-mine-2023/",
+      "movieId": "your-place-or-mine-2023"
+    },
+    {
+      "text": "Incredible…didn’t like that it brought me back to being a band kid though",
+      "rating": 5,
+      "reviewer": "gwbull",
+      "date": "Mon, 20 Feb 2023 15:45:47 +1300",
+      "url": "https://letterboxd.com/gwbull/film/whiplash-2014/",
+      "movieId": "whiplash-2014"
+    },
+    {
+      "text": "I put off watching this assuming I wouldn’t like it…welp turns out I love it. Who am I kidding, throw Miles Teller and his boopy face in and I’m all smiles ☺️",
+      "rating": 4,
+      "reviewer": "gwbull",
+      "date": "Mon, 13 Feb 2023 13:18:04 +1300",
+      "url": "https://letterboxd.com/gwbull/film/top-gun-maverick/",
+      "movieId": "top-gun:-maverick-2022"
+    },
+    {
+      "text": "Love it. Paul Mescal has a way of falling into roles effortlessly.",
+      "rating": 5,
+      "reviewer": "gwbull",
+      "date": "Thu, 9 Feb 2023 02:16:13 +1300",
+      "url": "https://letterboxd.com/gwbull/film/aftersun/",
+      "movieId": "aftersun-2022"
+    },
+    {
+      "text": "Austin Butler’s performance is incredible…it’s the only good thing about this movie. The first 45mins is rather jarring, due to the editing.",
+      "rating": 3.5,
+      "reviewer": "gwbull",
+      "date": "Tue, 31 Jan 2023 03:21:04 +1300",
+      "url": "https://letterboxd.com/gwbull/film/elvis-2022/",
+      "movieId": "elvis-2022"
+    },
+    {
+      "text": "Wow, what a thrill! Took me back to when I played an Agatha Christie computer game and Clue.",
+      "rating": 4,
+      "reviewer": "gwbull",
+      "date": "Mon, 9 Jan 2023 12:26:31 +1300",
+      "url": "https://letterboxd.com/gwbull/film/glass-onion/",
+      "movieId": "glass-onion-2022"
+    },
+    {
+      "text": "Had to hide in nic’s armpit during bloody scenes. But give me Sandra Bullock and I’m all smiles.",
+      "rating": 4.5,
+      "reviewer": "gwbull",
+      "date": "Wed, 4 Jan 2023 16:29:01 +1300",
+      "url": "https://letterboxd.com/gwbull/film/bullet-train/",
+      "movieId": "bullet-train-2022"
+    },
+    {
+      "text": "The visuals were great! But the kid next to me couldn’t sit still…they were playing with their seat, getting up and down frequently and talking loudly. This took away from my experience, as I couldn’t fully immerse myself in this water filled screensaver.",
+      "rating": 4,
+      "reviewer": "gwbull",
+      "date": "Tue, 3 Jan 2023 16:21:35 +1300",
+      "url": "https://letterboxd.com/gwbull/film/avatar-the-way-of-water/1/",
+      "movieId": "avatar:-the-way-of-water-2022"
+    },
+    {
+      "text": "A love letter to psw's If you're the plumber that made regular house calls to snake the drain of the bathtub in Saltburn, and you're wondering why you haven't been called recently.....your services are no longer needed!  Five stars",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 20 Jul 2024 01:43:16 +1200",
+      "url": "https://letterboxd.com/nicjbull/film/saltburn/",
+      "movieId": "saltburn-2023"
+    },
+    {
+      "text": "Technically, Josh Peck became death, the destroyer of worlds.  Five Stars.",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 12 Aug 2023 14:04:39 +1200",
+      "url": "https://letterboxd.com/nicjbull/film/oppenheimer-2023/",
+      "movieId": "oppenheimer-2023"
+    },
+    {
+      "text": "A love letter to Chevy commercials. The Lego movie did it first.  Five stars.  Do you someone who is beach? Recommended this movie to that person.  Ps. Mattel has the gusto to say that their dolls have no genitalia. Hey Pixar? Still waiting on you to explain how the cars in Cars have sex thank-you",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 5 Aug 2023 23:36:46 +1200",
+      "url": "https://letterboxd.com/nicjbull/film/barbie/",
+      "movieId": "barbie-2023"
+    },
+    {
+      "text": "From the makers of God's not Dead, comes the amazing story:  Bombs don't Boom (that hard) if You Have a Little Faith 2015There are 5 kids playing \"high five\" while being held hostage, so I'm giving this movie Five Stars Do you know a cop who gets sweaty while watching choir kids sing? Tell them...hey now....what?",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 8 Apr 2023 15:56:25 +1200",
+      "url": "https://letterboxd.com/nicjbull/film/the-cokeville-miracle/",
+      "movieId": "the-cokeville-miracle-2015"
+    },
+    {
+      "text": "God is good and helped Dennis Quaid land a little plane. Believe!  Five stars.  Do you know a fat man who loves his cesna? Tell him to buckle up and watch this movie...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 8 Apr 2023 15:50:50 +1200",
+      "url": "https://letterboxd.com/nicjbull/film/on-a-wing-and-a-prayer-2023/",
+      "movieId": "on-a-wing-and-a-prayer-2023"
+    },
+    {
+      "text": "why_wont_you_die2023.mp4 Five stars. Do you know a late night french radio dj who is losing a grip on their metaphors? Recommend this movie...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Fri, 31 Mar 2023 14:38:59 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/john-wick-chapter-4/",
+      "movieId": "john-wick:-chapter-4-2023"
+    },
+    {
+      "text": "John Wick 3: Fury Road is a love letter to going there and back again.  There are 5 judo throws every 5 minutes in this movie, therefore it gets... Five stars. Do know a Moroccan pillow merchant whos whole display is covered in blood thanks to a cute doggo? Recommend them tide to go...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Fri, 31 Mar 2023 01:08:00 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/john-wick-chapter-3-parabellum/",
+      "movieId": "john-wick:-chapter-3-–-parabellum-2019"
+    },
+    {
+      "text": "Succeeded in making me never want to smoke PCP, out of fear of me remembering the drug scenes of this movie.  Five stars. Do you know someone who needs to \"put some damn weight on it mama\"? Recommend this movie to that mama...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Wed, 29 Mar 2023 00:22:22 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/disco-godfather/",
+      "movieId": "disco-godfather-1979"
+    },
+    {
+      "text": "Don't worry, skydiving is a big part of this movie. Don Rickles does a tight 10 min set.  Five stars.  Do you know someone who wants to book a beachfront Airbnb with 26 of their closest, horny friends? Recommend this movie to them....",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Wed, 29 Mar 2023 00:02:58 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/beach-blanket-bingo/",
+      "movieId": "beach-blanket-bingo-1965"
+    },
+    {
+      "text": "Unclear if Miles Teller plays Miles Teller: the actor....or he plays Miles Teller: somebody good at baseball?  Either way, this Miles Teller loves \"..unlimited highschool pussy\". Nice.  Five stars.  Do you know somebody who likes Superbad but wishes the characters had no redeeming qualities? Recommended this movie to them",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Tue, 28 Mar 2023 03:45:34 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/project-x-2012/",
+      "movieId": "project-x-2012"
+    },
+    {
+      "text": "A love letter to DreamWorks poaching theme/animation style. (Coco: Into the Spiderverse) John Mulaney is handed a script, reads it verbatim in his 1930's refrigerator salesman voice and apparently that's all it takes to be a character in this movie. Five stars.  DreamWorks has the balls to put the post credit scene before the credits.  Do you know someone who's so fucking excited for more recycled IP? Tell em Shrek 5: A Knives Out Murder Mystery is coming soon....",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sun, 26 Feb 2023 15:56:09 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/puss-in-boots-the-last-wish/",
+      "movieId": "puss-in-boots:-the-last-wish-2022"
+    },
+    {
+      "text": "A love letter to serif fonts. Barry Keoghan really stretches and plays a weirdo in this movie. Five stars.  Do you know somebody who still holding on to that jizz rag and needs to let it go? Recommend this movie...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sun, 19 Feb 2023 13:55:25 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/the-green-knight/",
+      "movieId": "the-green-knight-2021"
+    },
+    {
+      "text": "Jon \"Skip the Dishes\" Hamm is a dick in this movie. A love letter to changing aspect ratios.Five stars Do you know someone that needs surrogate dad? Recommend this movie",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Mon, 13 Feb 2023 13:14:39 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/top-gun-maverick/",
+      "movieId": "top-gun:-maverick-2022"
+    },
+    {
+      "text": "This review may contain spoilers. A love letter to gaslighting your friends. Glow sticks are a character in this movie. Five stars.  Do you have a friend named Mike? He's slept with your wife in every timeline...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Sat, 14 Jan 2023 18:16:46 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/coherence/",
+      "movieId": "coherence-2013"
+    },
+    {
+      "text": "More Beatles references then Yesterday. Ascotts and among us. Five stars.  Do you know a puzzle box maker on Etsy that has to make 5 wooden boxes that are bigger on the inside....in a week? Recommend this movie.",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Mon, 9 Jan 2023 12:25:39 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/glass-onion/",
+      "movieId": "glass-onion-2022"
+    },
+    {
+      "text": "Chekhov's snake, Chekhov's water bottle, and an actual Chekhov's gun are all characters in this movie. A love letter to Thomas the Tank Engine. Five stars. Do you have a friend who thinks Voss is better than Fiji? Recommended this movie...",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Wed, 4 Jan 2023 16:27:12 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/bullet-train/",
+      "movieId": "bullet-train-2022"
+    },
+    {
+      "text": "A love letter to whales. Water is a character in this movie. Five stars",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Tue, 3 Jan 2023 12:19:56 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/avatar-the-way-of-water/",
+      "movieId": "avatar:-the-way-of-water-2022"
+    },
+    {
+      "text": "A love letter to minuture ponies. Eyebrows are a character is this movie. Five stars",
+      "rating": 5,
+      "reviewer": "nicjbull",
+      "date": "Tue, 3 Jan 2023 05:44:30 +1300",
+      "url": "https://letterboxd.com/nicjbull/film/the-banshees-of-inisherin/",
+      "movieId": "the-banshees-of-inisherin-2022"
+    },
+    {
+      "text": "The first hour was kinda fun, the second hour was a heaping mess",
+      "rating": 2,
+      "reviewer": "jacobmacp",
+      "date": "Wed, 22 May 2024 04:41:15 +1200",
+      "url": "https://letterboxd.com/jacobmacp/film/somethings-gotta-give/",
+      "movieId": "something's-gotta-give-2003"
+    },
+    {
+      "text": "Sucked - but honestly the special effects were great",
+      "rating": 2,
+      "reviewer": "jacobmacp",
+      "date": "Thu, 18 Apr 2024 11:46:08 +1200",
+      "url": "https://letterboxd.com/jacobmacp/film/idiocracy/",
+      "movieId": "idiocracy-2006"
+    },
+    {
+      "text": "This is dollarama Jason Bourne. But sometimes dollarama Jason Bourne can be fun",
+      "rating": 2,
+      "reviewer": "jacobmacp",
+      "date": "Sat, 30 Mar 2024 06:29:50 +1300",
+      "url": "https://letterboxd.com/jacobmacp/film/shooter/",
+      "movieId": "shooter-2007"
+    },
+    {
+      "text": "Into the Wild, but a downer the whole time and nobody wanted to be in the wild. Pretty mountains though",
+      "rating": 3.5,
+      "reviewer": "jacobmacp",
+      "date": "Thu, 8 Feb 2024 16:22:50 +1300",
+      "url": "https://letterboxd.com/jacobmacp/film/society-of-the-snow/",
+      "movieId": "society-of-the-snow-2023"
+    },
+    {
+      "text": "Feel-good underdog story that doesn’t ask very much of you",
+      "rating": 3,
+      "reviewer": "jacobmacp",
+      "date": "Thu, 1 Feb 2024 14:45:24 +1300",
+      "url": "https://letterboxd.com/jacobmacp/film/bank-of-dave/",
+      "movieId": "bank-of-dave-2023"
+    },
+    {
+      "text": "Moody John Wick is kind of a loser. Fun movie though",
+      "rating": 3,
+      "reviewer": "jacobmacp",
+      "date": "Thu, 30 Nov 2023 14:32:47 +1300",
+      "url": "https://letterboxd.com/jacobmacp/film/the-killer-2023/",
+      "movieId": "the-killer-2023"
+    },
+    {
+      "text": "First time in a while where a timmy performance felt like I was watching the character and not Timothee Chalemet acting",
+      "rating": 3.5,
+      "reviewer": "delvinm",
+      "date": "Thu, 16 Jan 2025 03:29:34 +1300",
+      "url": "https://letterboxd.com/delvinm/film/a-complete-unknown/",
+      "movieId": "a-complete-unknown-2024"
+    },
+    {
+      "text": "It’s bizzare and beautiful and feels like the culmination of something I didn’t know was building glutenhead.neocities.org",
+      "rating": 5,
+      "reviewer": "delvinm",
+      "date": "Mon, 13 Jan 2025 05:25:47 +1300",
+      "url": "https://letterboxd.com/delvinm/film/theres-a-crack-in-everything/",
+      "movieId": "there's-a-crack-in-everything-2025"
+    },
+    {
+      "text": "All Strahd needs to escape Barovia is a deed to a 2 bedroom",
+      "rating": 4.5,
+      "reviewer": "delvinm",
+      "date": "Tue, 7 Jan 2025 03:59:56 +1300",
+      "url": "https://letterboxd.com/delvinm/film/nosferatu-2024/",
+      "movieId": "nosferatu-2024"
+    },
+    {
+      "text": "This dish was just a little subtle for my taste but it certainly made me taste the food",
+      "rating": 3,
+      "reviewer": "delvinm",
+      "date": "Sat, 30 Nov 2024 16:48:25 +1300",
+      "url": "https://letterboxd.com/delvinm/film/columbus-2017/",
+      "movieId": "columbus-2017"
+    },
+    {
+      "text": "This review may contain spoilers. What ritual did the cult have to do for the family to not buy an EpiPen",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Sat, 2 Nov 2024 01:15:59 +1300",
+      "url": "https://letterboxd.com/delvinm/film/hereditary/",
+      "movieId": "hereditary-2018"
+    },
+    {
+      "text": "This review may contain spoilers. Monsters inc type corporation",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Wed, 9 Oct 2024 15:39:00 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-cabin-in-the-woods/",
+      "movieId": "the-cabin-in-the-woods-2011"
+    },
+    {
+      "text": "I wonder if there are zoning laws for all the kingdoms requiring to maintain a massive area around the castle for battle",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Fri, 4 Oct 2024 02:50:42 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-lord-of-the-rings-the-return-of-the-king/",
+      "movieId": "the-lord-of-the-rings:-the-return-of-the-king-2003"
+    },
+    {
+      "text": "Rewatched this as the director intended - under the hum of an old tube tv in a cabin at camp, with a dvd player that needed a couple of slaps to turn on",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Fri, 4 Oct 2024 02:46:56 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-lord-of-the-rings-the-two-towers/",
+      "movieId": "the-lord-of-the-rings:-the-two-towers-2002"
+    },
+    {
+      "text": "I never knew I wanted to go stay in a little hotel for an undefined amount of time until now",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Sun, 15 Sep 2024 13:35:46 +1200",
+      "url": "https://letterboxd.com/delvinm/film/winter-in-sokcho/",
+      "movieId": "winter-in-sokcho-2024"
+    },
+    {
+      "text": "You’ve tried heroin, but have you tried…getting the shot?",
+      "rating": 3.5,
+      "reviewer": "delvinm",
+      "date": "Wed, 1 May 2024 12:08:31 +1200",
+      "url": "https://letterboxd.com/delvinm/film/civil-war-2024/",
+      "movieId": "civil-war-2024"
+    },
+    {
+      "text": "It’s jarring to watch some of the source material for Pinterest as a whole",
+      "rating": 3.5,
+      "reviewer": "delvinm",
+      "date": "Fri, 29 Mar 2024 13:53:05 +1300",
+      "url": "https://letterboxd.com/delvinm/film/funny-face/",
+      "movieId": "funny-face-1957"
+    },
+    {
+      "text": "This review may contain spoilers. Incredible piece of science fiction, maybe the best of its kind.  However…Not a massive fan of the treatment of stilgar as kind of a fool?  Chalamet is super convincing as Paul post water of life , gave me some chills, but still feels a little..flat? Like still can’t shake the feeling of watching Timothee Chalamet play a character rather than being convinced he is Muad’dib. I feel like I would love this way way more had I not read the book, which is the opposite feeling I had from the first film. There’s so much world richness that understandably has to be left out. I did adore the treatment of Giedi Prime, even harkonnen fireworks are unsettling and devoid of joy",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Mon, 4 Mar 2024 10:06:29 +1300",
+      "url": "https://letterboxd.com/delvinm/film/dune-part-two/",
+      "movieId": "dune:-part-two-2024"
+    },
+    {
+      "text": "Flashbacks to the required reading of The Hate U Give",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Wed, 14 Feb 2024 17:45:30 +1300",
+      "url": "https://letterboxd.com/delvinm/film/american-fiction/",
+      "movieId": "american-fiction-2023"
+    },
+    {
+      "text": "Imagine your town getting barcode scanned before getting decimated",
+      "rating": 3,
+      "reviewer": "delvinm",
+      "date": "Sun, 11 Feb 2024 16:44:00 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-creator-2023/",
+      "movieId": "the-creator-2023"
+    },
+    {
+      "text": "Blow your nose man Edit: that’s actually how he talked",
+      "rating": 2.5,
+      "reviewer": "delvinm",
+      "date": "Fri, 9 Feb 2024 15:39:25 +1300",
+      "url": "https://letterboxd.com/delvinm/film/maestro-2023/",
+      "movieId": "maestro-2023"
+    },
+    {
+      "text": "At family gatherings of Christmas future, gone will be basement screenings of home alone and elf for the children.  They will watch this film. And I will be down there with them",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Thu, 8 Feb 2024 12:59:12 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-holdovers/",
+      "movieId": "the-holdovers-2023"
+    },
+    {
+      "text": "Your onurr, zis woman iz gay. Sank you, no furzur questionz",
+      "rating": 3.5,
+      "reviewer": "delvinm",
+      "date": "Thu, 1 Feb 2024 02:29:54 +1300",
+      "url": "https://letterboxd.com/delvinm/film/anatomy-of-a-fall/",
+      "movieId": "anatomy-of-a-fall-2023"
+    },
+    {
+      "text": "Imagine quebec blasting Stromae and Edith Piaf into Ottawa",
+      "rating": 3,
+      "reviewer": "delvinm",
+      "date": "Tue, 30 Jan 2024 12:48:20 +1300",
+      "url": "https://letterboxd.com/delvinm/film/island-in-between/",
+      "movieId": "island-in-between-2023"
+    },
+    {
+      "text": "I want this with the UP montage music underneath it",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Mon, 29 Jan 2024 09:27:26 +1300",
+      "url": "https://letterboxd.com/delvinm/film/ninety-five-senses/",
+      "movieId": "ninety-five-senses-2022"
+    },
+    {
+      "text": "Unrealistic… not a single “Sooooooo you’ve been driving Uber for long? “",
+      "rating": 1,
+      "reviewer": "delvinm",
+      "date": "Sat, 27 Jan 2024 13:04:39 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-after-2023-1/",
+      "movieId": "the-after-2023"
+    },
+    {
+      "text": "Why does the score sound like Tommy Wiseau composed it",
+      "rating": 3,
+      "reviewer": "delvinm",
+      "date": "Thu, 25 Jan 2024 16:15:11 +1300",
+      "url": "https://letterboxd.com/delvinm/film/may-december/",
+      "movieId": "may-december-2023"
+    },
+    {
+      "text": "For poor things 2 (poorer things), let’s get a 360 cam in there. Make the angle wider.",
+      "rating": 4,
+      "reviewer": "delvinm",
+      "date": "Thu, 11 Jan 2024 15:25:25 +1300",
+      "url": "https://letterboxd.com/delvinm/film/poor-things-2023/",
+      "movieId": "poor-things-2023"
+    },
+    {
+      "text": "This review may contain spoilers. Chekov’s puke, motorcycle, pills, and finally gun",
+      "rating": 4.5,
+      "reviewer": "delvinm",
+      "date": "Thu, 4 Jan 2024 04:30:44 +1300",
+      "url": "https://letterboxd.com/delvinm/film/the-iron-claw-2023/",
+      "movieId": "the-iron-claw-2023"
+    },
+    {
+      "text": "This review may contain spoilers. Oops I rear-ended the hotel and it blew up",
+      "rating": 1,
+      "reviewer": "delvinm",
+      "date": "Fri, 29 Dec 2023 17:42:01 +1300",
+      "url": "https://letterboxd.com/delvinm/film/quantum-of-solace/",
+      "movieId": "quantum-of-solace-2008"
+    }
+  ],
+  "metadata": {
+    "generated": "2025-03-06T09:45:32.426643",
+    "count": 174
+  }
+}

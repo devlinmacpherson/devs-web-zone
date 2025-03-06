@@ -1,0 +1,328 @@
+/* Letterboxd branding colors */
+:root {
+  --letterboxd-green: #00e054;
+  --letterboxd-dark: #14181c;
+  --letterboxd-darker: #0a0d0f;
+  --letterboxd-light: #456;
+  --letterboxd-lighter: #9ab;
+  --letterboxd-orange: #ff8000;
+}
+
+.boxdle-container {
+  min-height: 100vh;
+  background-color: var(--letterboxd-dark);
+  color: white;
+  padding: 2rem;
+  font-family: 'Graphik', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.boxdle-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.boxdle-header h1 {
+  font-size: 2.5rem;
+  color: var(--letterboxd-green);
+  margin: 0.5rem 0;
+}
+
+.boxdle-tagline {
+  color: var(--letterboxd-lighter);
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.back-link {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: var(--letterboxd-lighter);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back-link:hover {
+  color: var(--letterboxd-green);
+}
+
+.boxdle-game {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--letterboxd-darker);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.review-card {
+  background-color: var(--letterboxd-dark);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.reviewer {
+  color: var(--letterboxd-lighter);
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.rating {
+  color: var(--letterboxd-orange);
+  text-align: right;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.star-rating {
+  color: var(--letterboxd-orange);
+  letter-spacing: 2px;
+}
+
+.attempts-container {
+  margin: 2rem 0;
+}
+
+.attempt {
+  background-color: var(--letterboxd-light);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.attempt.empty {
+  background-color: rgba(69, 102, 119, 0.2);
+  height: 1.5rem;
+}
+
+.attempt.skipped {
+  background-color: #2c3440;
+  color: var(--letterboxd-lighter);
+  font-style: italic;
+}
+
+.guess-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.input-container {
+  position: relative;
+  flex-grow: 1;
+}
+
+.guess-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2c3440;
+  color: white;
+  font-size: 1rem;
+}
+
+.guess-input:focus {
+  outline: 2px solid var(--letterboxd-green);
+}
+
+.guess-button {
+  background-color: var(--letterboxd-green);
+  color: var(--letterboxd-dark);
+  border: none;
+  border-radius: 4px;
+  padding: 0 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.guess-button:hover {
+  background-color: #00c048;
+}
+
+.guess-button.skip-button {
+  background-color: var(--letterboxd-light);
+  color: white;
+}
+
+.guess-button.skip-button:hover {
+  background-color: #5a7a99;
+}
+
+.autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #2c3440;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.autocomplete-item {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--letterboxd-dark);
+}
+
+.autocomplete-item:hover {
+  background-color: var(--letterboxd-light);
+}
+
+.game-result {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+.game-result.won {
+  background-color: rgba(0, 224, 84, 0.1);
+  border: 1px solid var(--letterboxd-green);
+}
+
+.game-result.lost {
+  background-color: rgba(255, 128, 0, 0.1);
+  border: 1px solid var(--letterboxd-orange);
+}
+
+.reset-button {
+  background-color: var(--letterboxd-light);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: var(--letterboxd-green);
+}
+
+.boxdle-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid var(--letterboxd-green);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.boxdle-error {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--letterboxd-darker);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.boxdle-error h2 {
+  color: var(--letterboxd-orange);
+}
+
+/* Add these styles for hints */
+.hints-container {
+  background-color: rgba(44, 52, 64, 0.8);
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 3px solid var(--letterboxd-orange);
+}
+
+.hints-container h3 {
+  color: var(--letterboxd-orange);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.hints-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hint {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.hint-label {
+  color: var(--letterboxd-lighter);
+  margin-right: 0.5rem;
+}
+
+/* Add a loading indicator for when we're fetching movie details */
+.loading-details {
+  font-style: italic;
+  color: var(--letterboxd-lighter);
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* Add these styles for the alternate review hint */
+.alternate-review {
+  margin-top: 1rem;
+}
+
+.alternate-review-text {
+  font-style: italic;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.8rem;
+  border-radius: 4px;
+}
+
+.alternate-reviewer {
+  color: var(--letterboxd-lighter);
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.alternate-rating {
+  color: var(--letterboxd-orange);
+  text-align: right;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.no-alternate {
+  font-style: italic;
+  color: var(--letterboxd-lighter);
+} 
