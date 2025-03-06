@@ -11,6 +11,7 @@ import TCGTourney from './pages/TCGTourney';
 import MagnetPoetry from './pages/MagnetPoetry';
 import ComingSoon from './pages/ComingSoon';
 import CircleMerge from './pages/CircleMerge';
+import DndGenerator from './pages/DndGenerator';
 
 type AppStatus = 'ready' | 'development' | 'maintenance' | 'coming-soon';
 
@@ -44,6 +45,13 @@ const apps: App[] = [
   //   status: 'development',
   //   buttonText: 'Test'
   // },
+  {
+    name: 'D&D One-Shot',
+    description: 'Generate random D&D adventures complete with plot hooks, NPCs, and encounters!',
+    path: '/dnd-generator',
+    status: 'development',
+    buttonText: 'Generate'
+  },
  
   {
     name: 'TCGTourney',
@@ -386,6 +394,7 @@ function AppContent() {
           <Route path="/tcg-tourney" element={<TCGTourney />} />
           <Route path="/magnet-poetry" element={<MagnetPoetry />} />
           <Route path="/circle-merge" element={<CircleMerge />} />
+          <Route path="/dnd-generator" element={<DndGenerator />} />  
           <Route path="/coming-soon" element={<ComingSoon />} />
         </Routes>
       </ContentWrapper>
