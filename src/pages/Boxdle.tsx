@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import './Boxdle.css';
 import styled from 'styled-components';
 
-// API key for TMDB (in a real app, you'd store this in an environment variable)
-const TMDB_API_KEY = 'YOUR_TMDB_API_KEY'; // Replace with your actual API key
-
 interface Movie {
   id: string;
   title: string;
@@ -33,16 +30,6 @@ interface LetterboxdData {
     generated: string;
     count: number;
   };
-}
-
-interface MovieDetails {
-  director: string;
-  cast: string[];
-  genres: string[];
-  releaseYear: number | null;
-  runtime: number | null;
-  overview: string;
-  posterUrl: string | null;
 }
 
 interface FallbackData {
@@ -99,195 +86,85 @@ const Boxdle = () => {
   const [visibleHints, setVisibleHints] = useState<string[]>([]);
   const [alternateReview, setAlternateReview] = useState<Review | null>(null);
 
-  // New state for movie details and hints
-  const [movieDetails, setMovieDetails] = useState<MovieDetails | null>(null);
-  const [loadingDetails, setLoadingDetails] = useState(false);
-
   const fetchData = async () => {
     try {
-      const response = await fetch(`${process.env.PUBLIC_URL}/data/letterboxd_reviews.json`);
-      const data = await response.json();
+      setLoading(true);
+      const response = await fetch('./data/letterboxd_reviews.json');
       
-      // Filter out reviews without director or cast
-      const validReviews = data.filter((review: any) => 
-        review.movie?.director && review.movie?.cast && review.movie?.cast.length > 0
-      );
-
-      if (validReviews.length === 0) {
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      
+      const jsonData: LetterboxdData = await response.json();
+      setData(jsonData);
+      
+      // Filter out reviews that contain the movie title or don't have required information
+      const validReviews = jsonData.reviews.filter(review => {
+        const movie = jsonData.movies.find(m => m.id === review.movieId);
+        if (!movie) return false;
+        
+        // Skip if movie doesn't have director or cast information
+        if (!movie.director || !movie.cast || movie.cast.length === 0) {
+          return false;
+        }
+        
+        // Check if review text contains the movie title (case insensitive)
+        const reviewLower = review.text.toLowerCase();
+        const titleLower = movie.title.toLowerCase();
+        
+        // Also check for title without special characters (e.g., "Spider-Man" -> "spiderman")
+        const simplifiedTitle = titleLower.replace(/[^a-z0-9]/g, '');
+        
+        return !reviewLower.includes(titleLower) && 
+               (simplifiedTitle.length <= 3 || !reviewLower.includes(simplifiedTitle));
+      });
+      
+      if (validReviews.length > 0) {
+        // Select a random review from the filtered list
+        const randomIndex = Math.floor(Math.random() * validReviews.length);
+        const selectedReview = validReviews[randomIndex];
+        setCurrentReview(selectedReview);
+        
+        // Find the corresponding movie
+        const movie = jsonData.movies.find(m => m.id === selectedReview.movieId);
+        setCurrentMovie(movie || null);
+        
+        // Find an alternate review for the same movie by a different reviewer
+        const otherReviews = jsonData.reviews.filter(r => 
+          r.movieId === selectedReview.movieId && 
+          r.reviewer !== selectedReview.reviewer
+        );
+        
+        if (otherReviews.length > 0) {
+          setAlternateReview(otherReviews[0]);
+        }
+        
+        console.log(`Selected review for "${movie?.title}" that has complete information`);
+      } else {
         console.warn('No reviews found with complete information. Using fallback data.');
+        // Use fallback data if no valid reviews
         const fallbackData = getFallbackData();
         setCurrentReview(fallbackData.review);
         setCurrentMovie(fallbackData.movie);
-      } else {
-        const randomIndex = Math.floor(Math.random() * validReviews.length);
-        setCurrentReview(validReviews[randomIndex].review);
-        setCurrentMovie(validReviews[randomIndex].movie);
       }
       
       setLoading(false);
-    } catch (error) {
-      console.error('Error fetching data:', error);
+    } catch (err) {
+      console.error('Error loading data:', err);
+      setError('Error loading review data. Please try again later.');
+      setLoading(false);
+      
+      // Use fallback data
       const fallbackData = getFallbackData();
       setCurrentReview(fallbackData.review);
       setCurrentMovie(fallbackData.movie);
-      setLoading(false);
     }
   };
 
   // Fetch data from the JSON file
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch('/data/letterboxd_reviews.json');
-        
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        
-        const jsonData: LetterboxdData = await response.json();
-        setData(jsonData);
-        
-        // Filter out reviews that contain the movie title or don't have required information
-        const validReviews = jsonData.reviews.filter(review => {
-          const movie = jsonData.movies.find(m => m.id === review.movieId);
-          if (!movie) return false;
-          
-          // Skip if movie doesn't have director or cast information
-          if (!movie.director || !movie.cast || movie.cast.length === 0) {
-            return false;
-          }
-          
-          // Check if review text contains the movie title (case insensitive)
-          const reviewLower = review.text.toLowerCase();
-          const titleLower = movie.title.toLowerCase();
-          
-          // Also check for title without special characters (e.g., "Spider-Man" -> "spiderman")
-          const simplifiedTitle = titleLower.replace(/[^a-z0-9]/g, '');
-          
-          return !reviewLower.includes(titleLower) && 
-                 (simplifiedTitle.length <= 3 || !reviewLower.includes(simplifiedTitle));
-        });
-        
-        if (validReviews.length > 0) {
-          // Select a random review from the filtered list
-          const randomIndex = Math.floor(Math.random() * validReviews.length);
-          const selectedReview = validReviews[randomIndex];
-          setCurrentReview(selectedReview);
-          
-          // Find the corresponding movie
-          const movie = jsonData.movies.find(m => m.id === selectedReview.movieId);
-          setCurrentMovie(movie || null);
-          
-          // Find an alternate review for the same movie by a different reviewer
-          const otherReviews = jsonData.reviews.filter(r => 
-            r.movieId === selectedReview.movieId && 
-            r.reviewer !== selectedReview.reviewer
-          );
-          
-          if (otherReviews.length > 0) {
-            setAlternateReview(otherReviews[0]);
-          }
-          
-          console.log(`Selected review for "${movie?.title}" that has complete information`);
-        } else {
-          console.warn('No reviews found with complete information. Using fallback data.');
-          // Use fallback data if no valid reviews
-          const fallbackData = getFallbackData();
-          setCurrentReview(fallbackData.review);
-          setCurrentMovie(fallbackData.movie);
-        }
-        
-        setLoading(false);
-      } catch (err) {
-        console.error('Error loading data:', err);
-        setError('Error loading review data. Please try again later.');
-        setLoading(false);
-        
-        // Use fallback data
-        const fallbackData = getFallbackData();
-        setCurrentReview(fallbackData.review);
-        setCurrentMovie(fallbackData.movie);
-      }
-    };
-    
     fetchData();
   }, []);
-
-  // Fetch movie details from TMDB when a new movie is selected
-  useEffect(() => {
-    const fetchMovieDetails = async () => {
-      if (!currentMovie) return;
-      
-      setLoadingDetails(true);
-      
-      try {
-        // First, search for the movie to get its TMDB ID
-        const searchUrl = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(currentMovie.title)}${currentMovie.year ? `&year=${currentMovie.year}` : ''}`;
-        const searchResponse = await fetch(searchUrl);
-        const searchData = await searchResponse.json();
-        
-        if (searchData.results && searchData.results.length > 0) {
-          const tmdbId = searchData.results[0].id;
-          
-          // Then fetch detailed information
-          const detailsUrl = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${TMDB_API_KEY}&append_to_response=credits`;
-          const detailsResponse = await fetch(detailsUrl);
-          const detailsData = await detailsResponse.json();
-          
-          // Extract relevant information
-          const director = detailsData.credits.crew.find((person: any) => person.job === 'Director')?.name || 'Unknown';
-          const cast = detailsData.credits.cast.slice(0, 5).map((actor: any) => actor.name);
-          const genres = detailsData.genres.map((genre: any) => genre.name);
-          const releaseYear = detailsData.release_date ? parseInt(detailsData.release_date.split('-')[0]) : null;
-          const runtime = detailsData.runtime || null;
-          const overview = detailsData.overview || '';
-          const posterUrl = detailsData.poster_path ? `https://image.tmdb.org/t/p/w500${detailsData.poster_path}` : null;
-          
-          setMovieDetails({
-            director,
-            cast,
-            genres,
-            releaseYear,
-            runtime,
-            overview,
-            posterUrl
-          });
-          
-          // Update the current movie with the TMDB ID
-          setCurrentMovie(prev => prev ? { ...prev, tmdbId } : null);
-        } else {
-          console.warn(`No TMDB results found for ${currentMovie.title}`);
-          // Set some basic details even if we can't find the movie
-          setMovieDetails({
-            director: 'Unknown',
-            cast: [],
-            genres: [],
-            releaseYear: currentMovie.year,
-            runtime: null,
-            overview: '',
-            posterUrl: null
-          });
-        }
-      } catch (err) {
-        console.error('Error fetching movie details:', err);
-        // Set fallback details
-        setMovieDetails({
-          director: 'Unknown',
-          cast: [],
-          genres: [],
-          releaseYear: currentMovie.year,
-          runtime: null,
-          overview: '',
-          posterUrl: null
-        });
-      } finally {
-        setLoadingDetails(false);
-      }
-    };
-    
-    fetchMovieDetails();
-  }, [currentMovie]);
 
   // Update visible hints when attempts change
   useEffect(() => {
