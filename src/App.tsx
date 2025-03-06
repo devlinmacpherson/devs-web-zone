@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
+import starsBackground from './images/stars.gif';
 
 // Import pages
 import Boxdle from './pages/Boxdle';
 import TCGTourney from './pages/TCGTourney';
 import MagnetPoetry from './pages/MagnetPoetry';
 import ComingSoon from './pages/ComingSoon';
+import CircleMerge from './pages/CircleMerge';
 
 type AppStatus = 'ready' | 'development' | 'maintenance' | 'coming-soon';
 
@@ -35,6 +37,13 @@ const apps: App[] = [
     status: 'ready',
     buttonText: 'Enter'
   },
+  // {
+  //   name: 'Circle Merge',
+  //   description: 'Combine circles to create bigger ones! This is currently broken, but I will fix it soon.',
+  //   path: '/circle-merge',
+  //   status: 'development',
+  //   buttonText: 'Test'
+  // },
  
   {
     name: 'TCGTourney',
@@ -42,7 +51,7 @@ const apps: App[] = [
     path: '/tcg-tourney',
     status: 'coming-soon'
   },
- 
+
   {
     name: 'More Coming Soon',
     description: 'Stay tuned for more experimental web apps!',
@@ -54,10 +63,12 @@ const apps: App[] = [
 interface AppCardProps {
   $isBoxdle?: boolean;
   $isMagnetPoetry?: boolean;
+  $isCircleMerge?: boolean;
 }
 
 const AppContainer = styled.div<{ $isBoxdle?: boolean }>`
-  background: #008080;
+  background-image: url(${process.env.PUBLIC_URL}/images/stars.gif);
+  background-repeat: repeat;
   min-height: 100vh;
   padding: ${props => props.$isBoxdle ? '0' : '1rem'};
 `;
@@ -75,17 +86,59 @@ const Header = styled.header`
 
   h1 {
     font-family: 'MS Sans Serif', sans-serif;
-    color: #000080;
+    color:rgb(255, 50, 50);
     margin: 0;
     font-size: 3rem;
     white-space: nowrap;
-    animation: bounce-text 4s linear infinite alternate;
     display: inline-block;
+    animation: 
+      rotate3d 4s linear infinite,
+      glow 2s ease-in-out infinite alternate;
+    
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa;
+
+    @keyframes rotate3d {
+      from { transform: perspective(500px) rotateY(0deg); }
+      to { transform: perspective(500px) rotateY(360deg); }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #0fa;
+      }
+      to {
+        text-shadow:
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          0 0 42px #0fa,
+          0 0 82px #0fa,
+          0 0 92px #0fa;
+      }
+    }
   }
 
-  @keyframes bounce-text {
-    from { transform: translateX(50%); }
-    to { transform: translateX(-50%); }
+  p {
+    font-family: 'Brush Script MT', cursive;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa;
+    animation: glow 2s ease-in-out infinite alternate;
   }
 `;
 
@@ -151,15 +204,49 @@ const AppCard = styled(Link)<AppCardProps>`
 
   ${(props: AppCardProps) => props.$isMagnetPoetry && `
     background: #f8f8f8;
+    border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
     
     h2, p {
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Times New Roman', Times, serif, cursive;
       color: #000;
     }
   `}
+
+  ${(props: AppCardProps) => props.$isCircleMerge && `
+    background:rgb(235, 58, 73);
+    border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+    box-shadow: 
+      2px 2px 0px #000,
+      inset 2px 2px 10px rgba(255, 255, 255, 0.3);
+    
+    h2 {
+      color: #fff;
+      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    p {
+      color: #fff;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    }
+
+   
+  `}
 `;
 
-const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean; $isMagnetPoetry?: boolean }>`
+const StatusButton = styled.div<{ 
+  $status: AppStatus; 
+  $isBoxdle?: boolean; 
+  $isMagnetPoetry?: boolean;
+  $isCircleMerge?: boolean;
+}>`
   margin-top: 1rem;
   padding: 0.5rem;
   text-align: center;
@@ -183,6 +270,25 @@ const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean; $isMa
   }
   
   ${props => {
+    if (props.$isCircleMerge) {
+      return `
+        background:rgb(123, 238, 123);
+        color: #000000;
+      
+        border: 1px solidrgb(136, 136, 136);
+        box-shadow: 2px 2px 0rgb(145, 145, 145);
+        padding: 4px 8px;
+        
+        &:hover {
+          background: #ffffff;
+        }
+        
+        &:active {
+          transform: translate(1px, 1px);
+          box-shadow: 1px 1px 0 #000000;
+        }
+      `;
+    }
     if (props.$isMagnetPoetry) {
       return `
         background: #ffffff;
@@ -202,34 +308,26 @@ const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean; $isMa
         }
       `;
     }
-    switch (props.$status) {
-      case 'ready':
-        return props.$isBoxdle ? `
-          background: #ff8000;
-          color: #fff;
-          &:hover {
-            background: #ff9020;
-          }
-        ` : `
-          background: #c0c0c0;
-          color: #000;
-        `;
-      case 'development':
-        return `
-          background: #c0c0c0;
-          color: #000;
-        `;
-      case 'coming-soon':
-        return `
-          background: #c0c0c0;
-          color: #000;
-        `;
-      default:
-        return `
-          background: #c0c0c0;
-          color: #000;
-        `;
+    if (props.$isBoxdle) {
+      return `
+        background:rgb(255, 125, 3);
+        color: #000000;
+      
+        border: 1px solidrgb(136, 136, 136);
+        box-shadow: 2px 2px 0rgb(145, 145, 145);
+        padding: 4px 8px;
+        
+        &:hover {
+          background: #ffffff;
+        }
+        
+        &:active {
+          transform: translate(1px, 1px);
+          box-shadow: 1px 1px 0 #000000;
+        }
+      `;
     }
+    
   }}
 `;
 
@@ -251,6 +349,7 @@ function AppContent() {
         {!isBoxdle && (
           <Header>
             <h1>Dev's Web Zone</h1>
+            <p>Welcome to my collection of web experiments and games!</p>
           </Header>
         )}
         <Routes>
@@ -262,6 +361,7 @@ function AppContent() {
                   to={app.path}
                   $isBoxdle={app.name === 'Boxdle'}
                   $isMagnetPoetry={app.name === 'Magnet Poetry'}
+                  $isCircleMerge={app.name === 'Circle Merge'}
                 >
                   <div>
                     <h2>{app.name}</h2>
@@ -271,6 +371,7 @@ function AppContent() {
                     $status={app.status} 
                     $isBoxdle={app.name === 'Boxdle'}
                     $isMagnetPoetry={app.name === 'Magnet Poetry'}
+                    $isCircleMerge={app.name === 'Circle Merge'}
                   >
                     {app.status === 'ready' ? app.buttonText :
                      app.status === 'development' ? 'In development' :
@@ -284,6 +385,7 @@ function AppContent() {
           <Route path="/boxdle" element={<Boxdle />} />
           <Route path="/tcg-tourney" element={<TCGTourney />} />
           <Route path="/magnet-poetry" element={<MagnetPoetry />} />
+          <Route path="/circle-merge" element={<CircleMerge />} />
           <Route path="/coming-soon" element={<ComingSoon />} />
         </Routes>
       </ContentWrapper>
