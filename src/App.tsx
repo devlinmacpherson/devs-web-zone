@@ -28,6 +28,13 @@ const apps: App[] = [
     status: 'ready',
     buttonText: 'Play'
   },
+  {
+    name: 'Magnet Poetry',
+    description: 'Create poetry by dragging and arranging words, just like magnetic poetry on your fridge!',
+    path: '/magnet-poetry',
+    status: 'ready',
+    buttonText: 'Enter'
+  },
  
   {
     name: 'TCGTourney',
@@ -35,12 +42,7 @@ const apps: App[] = [
     path: '/tcg-tourney',
     status: 'coming-soon'
   },
-  {
-    name: 'Magnet Poetry',
-    description: 'Create poetry by dragging and arranging words, just like magnetic poetry on your fridge!',
-    path: '/magnet-poetry',
-    status: 'coming-soon'
-  },
+ 
   {
     name: 'More Coming Soon',
     description: 'Stay tuned for more experimental web apps!',
@@ -51,6 +53,7 @@ const apps: App[] = [
 
 interface AppCardProps {
   $isBoxdle?: boolean;
+  $isMagnetPoetry?: boolean;
 }
 
 const AppContainer = styled.div<{ $isBoxdle?: boolean }>`
@@ -145,9 +148,18 @@ const AppCard = styled(Link)<AppCardProps>`
       color: #99AABB;
     }
   `}
+
+  ${(props: AppCardProps) => props.$isMagnetPoetry && `
+    background: #f8f8f8;
+    
+    h2, p {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000;
+    }
+  `}
 `;
 
-const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean }>`
+const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean; $isMagnetPoetry?: boolean }>`
   margin-top: 1rem;
   padding: 0.5rem;
   text-align: center;
@@ -158,7 +170,6 @@ const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean }>`
   border-right: 2px solid #808080;
   border-bottom: 2px solid #808080;
   background: #c0c0c0;
-  transition: background-color 0.2s;
   
   &:hover {
     background: #d4d4d4;
@@ -172,6 +183,25 @@ const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean }>`
   }
   
   ${props => {
+    if (props.$isMagnetPoetry) {
+      return `
+        background: #ffffff;
+        color: #000000;
+        font-family: 'Times New Roman', Times, serif;
+        border: 1px solid #000000;
+        box-shadow: 2px 2px 0 #000000;
+        padding: 4px 8px;
+        
+        &:hover {
+          background: #ffffff;
+        }
+        
+        &:active {
+          transform: translate(1px, 1px);
+          box-shadow: 1px 1px 0 #000000;
+        }
+      `;
+    }
     switch (props.$status) {
       case 'ready':
         return props.$isBoxdle ? `
@@ -231,6 +261,7 @@ function AppContent() {
                   key={app.path}
                   to={app.path}
                   $isBoxdle={app.name === 'Boxdle'}
+                  $isMagnetPoetry={app.name === 'Magnet Poetry'}
                 >
                   <div>
                     <h2>{app.name}</h2>
@@ -239,6 +270,7 @@ function AppContent() {
                   <StatusButton 
                     $status={app.status} 
                     $isBoxdle={app.name === 'Boxdle'}
+                    $isMagnetPoetry={app.name === 'Magnet Poetry'}
                   >
                     {app.status === 'ready' ? app.buttonText :
                      app.status === 'development' ? 'In development' :
