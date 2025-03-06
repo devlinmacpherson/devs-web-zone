@@ -205,7 +205,7 @@ const StatusButton = styled.div<{ $status: AppStatus; $isBoxdle?: boolean }>`
 
 function App() {
   return (
-    <Router>
+    <Router basename="/devs-web-zone">
       <AppContent />
     </Router>
   );
