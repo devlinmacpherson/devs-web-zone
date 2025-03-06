@@ -105,7 +105,7 @@ const Boxdle = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('/data/letterboxd_reviews.json');
+      const response = await fetch(`${process.env.PUBLIC_URL}/data/letterboxd_reviews.json`);
       const data = await response.json();
       
       // Filter out reviews without director or cast
