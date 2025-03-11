@@ -1,71 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-const MagnetPoetryContainer = styled.div`
-  min-height: 100vh;
-  width: 100%;
-  background: #f8f8f8; // Very light grey, almost white
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden; // Prevent scrolling
-  font-family: 'Times New Roman', Times, serif;
-`;
-
-const Header = styled.div`
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  .back-link {
-    text-decoration: none;
-    color: #000000;
-    display: inline-block;
-    background: #ffffff;
-    padding: 4px 8px;
-    border: 1px solid #000000;
-    box-shadow: 2px 2px 0 #000000;
-    font-family: 'Times New Roman', Times, serif;
-    
-    &:hover {
-      text-decoration: none;
-      transform: translate(1px, 1px);
-      box-shadow: 1px 1px 0 #000000;
-    }
-  }
-`;
-
-const Title = styled.div`
-  position: fixed;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 9;
-  font-family: 'Times New Roman', Times, serif;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  p {
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-  }
-`;
+import { AppPageContainer } from '../components/SharedStyles';
 
 const Word = styled.div`
   position: absolute;
@@ -77,11 +13,62 @@ const Word = styled.div`
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid #000000;
   box-shadow: 2px 2px 0 #000000;
+  max-width: calc(100% - 4rem);
   
   &:active {
     cursor: grabbing;
     box-shadow: 1px 1px 0 #000000;
     transform: translate(1px, 1px);
+  }
+`;
+
+const MagnetPoetryContainer = styled(AppPageContainer)`
+  background: #f8f8f8;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const Header = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  height: auto;
+`;
+
+const Title = styled.p`
+  background: #ffffff;
+  color: #000000;
+  padding: 4px 8px;
+  cursor: move;
+  user-select: none;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 0 #000000;
+  max-width: calc(100% - 4rem);
+`;
+
+const BackLink = styled(Link)`
+  background: white;
+  padding: 8px 16px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  
+  &:hover {
+    background: #eee;
+  }
+  
+  &:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 black;
   }
 `;
 
@@ -154,17 +141,34 @@ interface WordPosition {
 const SNAP_DISTANCE = 10; // Distance in pixels when words will snap together
 const HEADER_HEIGHT = 150; // Space to reserve for header in pixels
 
+// First, create a function to get a random subset of words
+const getRandomWords = (count: number) => {
+  const shuffled = [...SAMPLE_WORDS].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+};
+
 const MagnetPoetry = () => {
-  const [words, setWords] = useState<WordPosition[]>(() => 
-    SAMPLE_WORDS.map((word, index) => ({
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  const [words, setWords] = useState<WordPosition[]>(() => {
+    // Increase to 80 words
+    const selectedWords = getRandomWords(80);
+    
+    // Define safe area for initial word placement
+    const safeWidth = 700; // Wider area
+    const safeHeight = 400; // Taller area
+    const margin = 30; // Slightly smaller margin to accommodate more words
+    
+    return selectedWords.map((word, index) => ({
       id: index,
       text: word,
-      x: Math.random() * (window.innerWidth - 100),
-      y: HEADER_HEIGHT + Math.random() * (window.innerHeight - HEADER_HEIGHT - 40),
+      // Random position within safe area
+      x: margin + Math.random() * safeWidth,
+      y: HEADER_HEIGHT + margin + Math.random() * safeHeight,
       width: 0,
       height: 0
-    }))
-  );
+    }));
+  });
   
   const [draggedWord, setDraggedWord] = useState<{
     id: number;
@@ -205,6 +209,22 @@ const MagnetPoetry = () => {
   const measureWord = (id: number, element: HTMLDivElement | null) => {
     wordRefs.current[id] = element;
   };
+
+  // Add effect to reposition words if they're outside bounds
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const container = containerRef.current;
+    const containerRect = container.getBoundingClientRect();
+    const maxX = containerRect.width - 100; // Leave room for word width
+    const maxY = containerRect.height - 40; // Leave room for word height
+
+    setWords(words.map(word => ({
+      ...word,
+      x: Math.min(Math.max(20, word.x), maxX),
+      y: Math.min(Math.max(HEADER_HEIGHT, word.y), maxY)
+    })));
+  }, [containerRef.current]);
 
   const findSnapPosition = (
     currentId: number,
@@ -274,62 +294,67 @@ const MagnetPoetry = () => {
     currentX: number,
     currentY: number
   ) => {
-    const rect = (event.target as HTMLElement).getBoundingClientRect();
-    const offsetX = event.clientX - rect.left;
-    const offsetY = event.clientY - rect.top;
-
+    const wordElement = event.target as HTMLElement;
+    const wordRect = wordElement.getBoundingClientRect();
+    
     setDraggedWord({
       id: wordId,
       startX: currentX,
       startY: currentY,
-      offsetX,
-      offsetY
+      offsetX: event.clientX - wordRect.left,
+      offsetY: event.clientY - wordRect.top
     });
   };
 
+  // Update handleMouseMove to keep words within bounds
   const handleMouseMove = (event: React.MouseEvent) => {
-    if (!draggedWord) return;
+    if (!draggedWord || !containerRef.current) return;
 
-    const newX = event.clientX - draggedWord.offsetX;
-    const newY = Math.max(HEADER_HEIGHT, event.clientY - draggedWord.offsetY);
+    const containerRect = containerRef.current.getBoundingClientRect();
+    const maxX = containerRect.width - 100;
+    const maxY = containerRect.height - 40;
+    
+    const newX = event.clientX - containerRect.left - draggedWord.offsetX;
+    const newY = event.clientY - containerRect.top - draggedWord.offsetY;
 
-    // Find snap position
-    const { x: snapX, y: snapY } = findSnapPosition(draggedWord.id, newX, newY);
+    // Constrain position within bounds
+    const boundedX = Math.min(Math.max(20, newX), maxX);
+    const boundedY = Math.min(Math.max(HEADER_HEIGHT, newY), maxY);
 
     setWords(words.map(word => 
       word.id === draggedWord.id
-        ? { ...word, x: snapX, y: snapY }
+        ? { ...word, x: boundedX, y: boundedY }
         : word
     ));
   };
 
   return (
     <MagnetPoetryContainer
+      ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseUp={() => setDraggedWord(null)}
       onMouseLeave={() => setDraggedWord(null)}
     >
-      <Header>
-        <Link to="/" className="back-link">← Home</Link>
-      </Header>
-      <Title>
-        <h1>Magnet Poetry</h1>
-        <p>Drag words to create your poem</p>
-      </Title>
+      <div className="app-content">
+        <Header>
+          <BackLink to="/">← Home</BackLink>
+          <Title>Magnet Poetry</Title>
+        </Header>
 
-      {words.map((word) => (
-        <Word
-          key={word.id}
-          ref={(el) => measureWord(word.id, el)}
-          style={{
-            left: word.x,
-            top: word.y,
-          }}
-          onMouseDown={(e) => handleMouseDown(e, word.id, word.x, word.y)}
-        >
-          {word.text}
-        </Word>
-      ))}
+        {words.map((word) => (
+          <Word
+            key={word.id}
+            ref={(el) => measureWord(word.id, el)}
+            style={{
+              left: word.x,
+              top: word.y,
+            }}
+            onMouseDown={(e) => handleMouseDown(e, word.id, word.x, word.y)}
+          >
+            {word.text}
+          </Word>
+        ))}
+      </div>
     </MagnetPoetryContainer>
   );
 };

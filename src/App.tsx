@@ -15,75 +15,49 @@ import DndGenerator from './pages/DndGenerator';
 
 type AppStatus = 'ready' | 'development' | 'maintenance' | 'coming-soon';
 
+interface AppCardProps {
+  backgroundColor?: string;
+  titleColor?: string;
+  textColor?: string;
+  fontFamily?: string;
+  buttonBgColor?: string;
+  buttonTextColor?: string;
+}
+
 interface App {
   name: string;
   description: string;
   path: string;
   status: AppStatus;
   buttonText?: string;
+  backgroundColor?: string;
+  titleColor?: string;
+  textColor?: string;
+  fontFamily?: string;
+  buttonBgColor?: string;
+  buttonTextColor?: string;
+  icon: string;
 }
 
-const apps: App[] = [
-  {
-    name: 'Boxdle',
-    description: 'A Letterboxd-themed movie guessing game',
-    path: '/boxdle',
-    status: 'ready',
-    buttonText: 'Play'
-  },
-  {
-    name: 'Magnet Poetry',
-    description: 'Create poetry by dragging and arranging words, just like magnetic poetry on your fridge!',
-    path: '/magnet-poetry',
-    status: 'ready',
-    buttonText: 'Enter'
-  },
-  // {
-  //   name: 'Circle Merge',
-  //   description: 'Combine circles to create bigger ones! This is currently broken, but I will fix it soon.',
-  //   path: '/circle-merge',
-  //   status: 'development',
-  //   buttonText: 'Test'
-  // },
-  {
-    name: 'D&D One-Shot',
-    description: 'Generate random D&D adventures complete with plot hooks, NPCs, and encounters!',
-    path: '/dnd-generator',
-    status: 'development',
-    buttonText: 'Generate'
-  },
- 
-  {
-    name: 'TCGTourney',
-    description: 'Tournament management system for trading card games',
-    path: '/tcg-tourney',
-    status: 'coming-soon'
-  },
-
-  {
-    name: 'More Coming Soon',
-    description: 'Stay tuned for more experimental web apps!',
-    path: '/coming-soon',
-    status: 'coming-soon'
-  }
-];
-
-interface AppCardProps {
-  $isBoxdle?: boolean;
-  $isMagnetPoetry?: boolean;
-  $isCircleMerge?: boolean;
+interface StatusButtonProps extends AppCardProps {
+  status: AppStatus;
 }
 
-const AppContainer = styled.div<{ $isBoxdle?: boolean }>`
+
+
+const AppContainer = styled.div`
   background-image: url(${process.env.PUBLIC_URL}/images/stars.gif);
   background-repeat: repeat;
   min-height: 100vh;
-  padding: ${props => props.$isBoxdle ? '0' : '1rem'};
+  padding: 1rem;
 `;
 
-const ContentWrapper = styled.div<{ $isBoxdle?: boolean }>`
-  max-width: ${props => props.$isBoxdle ? '100%' : '1200px'};
+const ContentWrapper = styled.div`
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `;
 
 const Header = styled.header`
@@ -91,6 +65,10 @@ const Header = styled.header`
   margin-bottom: 1rem;
   text-align: center;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
 
   h1 {
     font-family: 'MS Sans Serif', sans-serif;
@@ -164,10 +142,11 @@ const AppCard = styled(Link)<AppCardProps>`
   flex-direction: column;
   padding: 1rem;
   text-decoration: none;
-  color: #000;
   height: 100%;
   justify-content: space-between;
-  background: #c0c0c0;
+  
+  /* Standard Windows 98-style borders */
+  background: ${props => props.backgroundColor || '#c0c0c0'};
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #808080;
@@ -184,90 +163,34 @@ const AppCard = styled(Link)<AppCardProps>`
 
   h2 {
     margin: 0 0 1rem 0;
-    font-family: 'MS Sans Serif', sans-serif;
+    font-family: ${props => props.fontFamily || "'MS Sans Serif', sans-serif"};
     font-size: 1.2rem;
-    color: #000080;
+    color: ${props => props.titleColor || '#000080'};
     text-decoration: none;
   }
 
   p {
     margin: 0;
-    font-family: 'MS Sans Serif', sans-serif;
-    color: #000;
+    font-family: ${props => props.fontFamily || "'MS Sans Serif', sans-serif"};
+    color: ${props => props.textColor || '#000'};
   }
-
-  ${(props: AppCardProps) => props.$isBoxdle && `
-    background: #14181c;
-    color: #fff;
-
-    h2 {
-      color: #00E054;
-      font-weight: 600;
-    }
-
-    p {
-      color: #99AABB;
-    }
-  `}
-
-  ${(props: AppCardProps) => props.$isMagnetPoetry && `
-    background: #f8f8f8;
-    border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
-    
-    h2, p {
-      font-family: 'Times New Roman', Times, serif, cursive;
-      color: #000;
-    }
-  `}
-
-  ${(props: AppCardProps) => props.$isCircleMerge && `
-    background:rgb(235, 58, 73);
-    border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #808080;
-  border-bottom: 2px solid #808080;
-    box-shadow: 
-      2px 2px 0px #000,
-      inset 2px 2px 10px rgba(255, 255, 255, 0.3);
-    
-    h2 {
-      color: #fff;
-      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
-      font-weight: bold;
-      font-size: 1.4rem;
-    }
-
-    p {
-      color: #fff;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
-    }
-
-   
-  `}
 `;
 
-const StatusButton = styled.div<{ 
-  $status: AppStatus; 
-  $isBoxdle?: boolean; 
-  $isMagnetPoetry?: boolean;
-  $isCircleMerge?: boolean;
-}>`
+const StatusButton = styled.div<StatusButtonProps>`
   margin-top: 1rem;
   padding: 0.5rem;
   text-align: center;
-  font-family: 'MS Sans Serif', sans-serif;
+  font-family: ${props => props.fontFamily || "'MS Sans Serif', sans-serif"};
   font-size: 0.9rem;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #808080;
   border-bottom: 2px solid #808080;
-  background: #c0c0c0;
+  background: ${props => props.buttonBgColor || '#c0c0c0'};
+  color: ${props => props.buttonTextColor || '#000'};
   
   &:hover {
-    background: #d4d4d4;
+    filter: brightness(110%);
   }
 
   &:active {
@@ -276,67 +199,35 @@ const StatusButton = styled.div<{
     border-right: 2px solid #fff;
     border-bottom: 2px solid #fff;
   }
-  
-  ${props => {
-    if (props.$isCircleMerge) {
-      return `
-        background:rgb(123, 238, 123);
-        color: #000000;
-      
-        border: 1px solidrgb(136, 136, 136);
-        box-shadow: 2px 2px 0rgb(145, 145, 145);
-        padding: 4px 8px;
-        
-        &:hover {
-          background: #ffffff;
-        }
-        
-        &:active {
-          transform: translate(1px, 1px);
-          box-shadow: 1px 1px 0 #000000;
-        }
-      `;
-    }
-    if (props.$isMagnetPoetry) {
-      return `
-        background: #ffffff;
-        color: #000000;
-        font-family: 'Times New Roman', Times, serif;
-        border: 1px solid #000000;
-        box-shadow: 2px 2px 0 #000000;
-        padding: 4px 8px;
-        
-        &:hover {
-          background: #ffffff;
-        }
-        
-        &:active {
-          transform: translate(1px, 1px);
-          box-shadow: 1px 1px 0 #000000;
-        }
-      `;
-    }
-    if (props.$isBoxdle) {
-      return `
-        background:rgb(255, 125, 3);
-        color: #000000;
-      
-        border: 1px solidrgb(136, 136, 136);
-        box-shadow: 2px 2px 0rgb(145, 145, 145);
-        padding: 4px 8px;
-        
-        &:hover {
-          background: #ffffff;
-        }
-        
-        &:active {
-          transform: translate(1px, 1px);
-          box-shadow: 1px 1px 0 #000000;
-        }
-      `;
-    }
-    
-  }}
+`;
+
+const IconButton = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  background: #c0c0c0;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 1px 1px 0px #000;
+  margin-right: 0.5rem;
+`;
+
+const TitleRow = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+  }
 `;
 
 function App() {
@@ -349,17 +240,77 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const isBoxdle = location.pathname === '/boxdle';
+
+  // Define the apps array
+  const apps: App[] = [
+    {
+      name: 'Boxdle',
+      description: 'A Letterboxd-themed movie guessing game',
+      path: '/boxdle',
+      status: 'ready',
+      buttonText: 'Play',
+      backgroundColor: '#c0c0c0',
+      titleColor: '#000080',
+      textColor: '#000000',
+      buttonBgColor: '#c0c0c0',
+      buttonTextColor: '#000000',
+      icon: '🎬'
+    },
+    {
+      name: 'Magnet Poetry',
+      description: 'Create poetry by dragging and arranging words, just like magnetic poetry on your fridge!',
+      path: '/magnet-poetry',
+      status: 'ready',
+      buttonText: 'Enter',
+      backgroundColor: '#c0c0c0',
+      titleColor: '#000080',
+      textColor: '#000000',
+      buttonBgColor: '#c0c0c0',
+      buttonTextColor: '#000000',
+      icon: '📝'
+    },
+    {
+      name: 'D&D One-Shot',
+      description: 'Generate random D&D adventures complete with plot hooks, NPCs, and encounters!',
+      path: '/dnd-generator',
+      status: 'ready',
+      buttonText: 'Generate',
+      backgroundColor: '#c0c0c0',
+      titleColor: '#000080',
+      textColor: '#000000',
+      buttonBgColor: '#c0c0c0',
+      buttonTextColor: '#000000',
+      icon: '🎲'
+    },
+    {
+      name: 'TCGTourney',
+      description: 'Tournament management system for trading card games',
+      path: '/tcg-tourney',
+      status: 'coming-soon',
+      backgroundColor: '#c0c0c0',
+      titleColor: '#000080',
+      textColor: '#000000',
+      icon: '🃏'
+    },
+    {
+      name: 'More Coming Soon',
+      description: 'Stay tuned for more experimental web apps!',
+      path: '/coming-soon',
+      status: 'coming-soon',
+      backgroundColor: '#c0c0c0',
+      titleColor: '#000080',
+      textColor: '#000000',
+      icon: '✨'
+    }
+  ];
 
   return (
-    <AppContainer $isBoxdle={isBoxdle}>
-      <ContentWrapper $isBoxdle={isBoxdle}>
-        {!isBoxdle && (
-          <Header>
-            <h1>Dev's Web Zone</h1>
-            <p>Welcome to my collection of web experiments and games!</p>
-          </Header>
-        )}
+    <AppContainer>
+      <ContentWrapper>
+        <Header>
+          <h1>Dev's Web Zone</h1>
+          <p>Welcome to my collection of web experiments and games!</p>
+        </Header>
         <Routes>
           <Route path="/" element={
             <AppGrid>
@@ -367,19 +318,26 @@ function AppContent() {
                 <AppCard 
                   key={app.path}
                   to={app.path}
-                  $isBoxdle={app.name === 'Boxdle'}
-                  $isMagnetPoetry={app.name === 'Magnet Poetry'}
-                  $isCircleMerge={app.name === 'Circle Merge'}
+                  backgroundColor={app.backgroundColor}
+                  titleColor={app.titleColor}
+                  textColor={app.textColor}
+                  fontFamily={app.fontFamily}
+                  buttonBgColor={app.buttonBgColor}
+                  buttonTextColor={app.buttonTextColor}
                 >
                   <div>
-                    <h2>{app.name}</h2>
+                    <TitleRow>
+                      <IconButton>{app.icon}</IconButton>
+                      <h2>{app.name}</h2>
+                    </TitleRow>
                     <p>{app.description}</p>
                   </div>
                   <StatusButton 
-                    $status={app.status} 
-                    $isBoxdle={app.name === 'Boxdle'}
-                    $isMagnetPoetry={app.name === 'Magnet Poetry'}
-                    $isCircleMerge={app.name === 'Circle Merge'}
+                    status={app.status}
+                    backgroundColor={app.buttonBgColor}
+                    fontFamily={app.fontFamily}
+                    buttonBgColor={app.buttonBgColor}
+                    buttonTextColor={app.buttonTextColor}
                   >
                     {app.status === 'ready' ? app.buttonText :
                      app.status === 'development' ? 'In development' :

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { AppPageContainer } from '../components/SharedStyles';
 
 // Data constants
 const RACES = [
@@ -227,14 +228,16 @@ interface AdventureSettings {
   timePressure: string;
 }
 
-const Container = styled.div`
-  min-height: 100vh;
-  padding: 2rem;
+const Container = styled(AppPageContainer)`
   background: white;
   color: black;
   font-family: 'Times New Roman', Times, serif;
-  max-width: 1000px;
+`;
+
+const ContentContainer = styled.div`
+  max-width: 800px;
   margin: 0 auto;
+  width: 100%;
 `;
 
 const TabContainer = styled.div`
@@ -242,6 +245,19 @@ const TabContainer = styled.div`
   gap: 0.5rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid black;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const TabGroup = styled.div`
+  display: flex;
+  gap: 0.5rem;
+`;
+
+const TopButtonGroup = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
 `;
 
 const Tab = styled.button<{ $isActive: boolean }>`
@@ -350,20 +366,37 @@ const AdventureGrid = styled.div`
   }
 `;
 
+const SelectWrapper = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+`;
+
+const SelectElement = styled(Select)`
+  margin-bottom: 0;
+  flex: 1;
+`;
+
+const SquareRandomButton = styled(Button)`
+  padding: 0;
+  margin: 0;
+  aspect-ratio: 1;
+  height: 1.8rem; // This should match your select height
+  width: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+`;
+
 const CategorySection = styled.div`
   padding: 0;
   margin-bottom: 0;
   
   h3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 0.25rem;
     font-size: 1rem;
-  }
-
-  select {
-    margin-bottom: 0;
   }
 `;
 
@@ -393,10 +426,7 @@ const CategoryContent = styled.div`
 `;
 
 const RandomizeAllButton = styled(Button)`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border: 2px solid black;
+  
   background: white;
 `;
 
@@ -448,9 +478,30 @@ const CategoryTitle = styled.h4`
   padding-bottom: 0.25rem;
 `;
 
+// Add a new styled component for the back button
+const BackButton = styled(Button)`
+  margin: 0 1rem 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+`;
+
+const TopBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+
 const DndGenerator: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'party' | 'setting' | 'adventure'>('party');
-  const [partySize, setPartySize] = useState<number>(4);
+  const [partySize, setPartySize] = useState<number | ''>('');
   const [party, setParty] = useState<PartyMember[]>([]);
   
   // Setting state
@@ -479,12 +530,16 @@ const DndGenerator: React.FC = () => {
     class: CLASSES[Math.floor(Math.random() * CLASSES.length)]
   });
 
-  const handlePartySizeChange = (size: number) => {
+  const handlePartySizeChange = (size: number | '') => {
     setPartySize(size);
-    setParty(Array(size).fill(null).map(() => ({
-      race: 'random',
-      class: 'random'
-    })));
+    if (typeof size === 'number') {
+      setParty(Array(size).fill(null).map(() => ({
+        race: 'random',
+        class: 'random'
+      })));
+    } else {
+      setParty([]); // Clear party when no size is selected
+    }
   };
 
   const updatePartyMember = (index: number, field: 'race' | 'class', value: string) => {
@@ -494,7 +549,11 @@ const DndGenerator: React.FC = () => {
   };
 
   const randomizeParty = () => {
-    const newParty = Array.from({ length: 4 }, () => ({
+    // Use selected party size or default to 3
+    const size = typeof partySize === 'number' ? partySize : 3;
+    setPartySize(size);
+    
+    const newParty = Array.from({ length: size }, () => ({
       race: RACES[Math.floor(Math.random() * RACES.length)],
       class: CLASSES[Math.floor(Math.random() * CLASSES.length)]
     }));
@@ -502,8 +561,12 @@ const DndGenerator: React.FC = () => {
   };
 
   const randomizeAll = () => {
+    // Use selected party size or default to 3
+    const size = typeof partySize === 'number' ? partySize : 3;
+    setPartySize(size);
+    
     // Randomize party
-    const newParty = Array.from({ length: 4 }, () => ({
+    const newParty = Array.from({ length: size }, () => ({
       race: RACES[Math.floor(Math.random() * RACES.length)],
       class: CLASSES[Math.floor(Math.random() * CLASSES.length)]
     }));
@@ -579,145 +642,270 @@ const DndGenerator: React.FC = () => {
     }));
   };
 
+  // Add these helper functions
+  const randomizePartyMember = (index: number, field: 'race' | 'class') => {
+    const options = field === 'race' ? RACES : CLASSES;
+    updatePartyMember(index, field, options[Math.floor(Math.random() * options.length)]);
+  };
+
+  const randomizeSingleSetting = (setting: keyof typeof selectedSettings, options: string[]) => {
+    setSelectedSettings(prev => ({
+      ...prev,
+      [setting]: options[Math.floor(Math.random() * options.length)]
+    }));
+  };
+
+  const clearParty = () => {
+    setPartySize('');
+    setParty([]);
+  };
+
+  const clearSettings = () => {
+    setSelectedSettings({
+      environment: '',
+      politicalSystem: '',
+      season: '',
+      weather: '',
+      techLevel: '',
+      magicLevel: ''
+    });
+  };
+
+  // Add clearAll function
+  const clearAll = () => {
+    clearParty();
+    clearSettings();
+    setAdventureSettings({
+      conflictType: '',
+      antagonistType: '',
+      stakes: '',
+      complications: '',
+      plotTwist: '',
+      macguffin: '',
+      locationSignificance: '',
+      timePressure: ''
+    });
+  };
+
+  // Update the party creation render function
   const renderPartyCreation = () => (
     <Section>
       <div>
-        <h3>Party Size</h3>
-        <Select 
+        <h3 style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          Party Size
+          <RandomizeCategoryButton 
+            onClick={() => handlePartySizeChange(Math.floor(Math.random() * 6) + 1)}
+          >
+            🎲 Random
+          </RandomizeCategoryButton>
+        </h3>
+        <Select
           value={partySize}
-          onChange={(e) => handlePartySizeChange(Number(e.target.value))}
+          onChange={(e) => handlePartySizeChange(e.target.value === '' ? '' : Number(e.target.value))}
         >
+          <option value="">Select Party Size</option>
           {[1,2,3,4,5,6].map(size => (
             <option key={size} value={size}>{size} members</option>
           ))}
         </Select>
       </div>
 
-      <PartyGrid>
-        {party.map((member, index) => (
-          <PartyMemberCard key={index}>
-            <h3>Member {index + 1}</h3>
-            <Select
-              value={member.race}
-              onChange={(e) => updatePartyMember(index, 'race', e.target.value)}
-            >
-              <option value="random">Random Race</option>
-              {RACES.map(race => (
-                <option key={race} value={race}>{race}</option>
-              ))}
-            </Select>
-            <Select
-              value={member.class}
-              onChange={(e) => updatePartyMember(index, 'class', e.target.value)}
-            >
-              <option value="random">Random Class</option>
-              {CLASSES.map(cls => (
-                <option key={cls} value={cls}>{cls}</option>
-              ))}
-            </Select>
-          </PartyMemberCard>
-        ))}
-      </PartyGrid>
+      {partySize !== '' && (
+        <PartyGrid>
+          {party.map((member, index) => (
+            <PartyMemberCard key={index}>
+              <h3>Member {index + 1}</h3>
+              <SelectWrapper>
+                <SelectElement
+                  value={member.race}
+                  onChange={(e) => updatePartyMember(index, 'race', e.target.value)}
+                >
+                  <option value="random">Select Race</option>
+                  {RACES.map(race => (
+                    <option key={race} value={race}>{race}</option>
+                  ))}
+                </SelectElement>
+                <SquareRandomButton 
+                  onClick={() => randomizePartyMember(index, 'race')}
+                >
+                  🎲
+                </SquareRandomButton>
+              </SelectWrapper>
+              <SelectWrapper>
+                <SelectElement
+                  value={member.class}
+                  onChange={(e) => updatePartyMember(index, 'class', e.target.value)}
+                >
+                  <option value="random">Select Class</option>
+                  {CLASSES.map(cls => (
+                    <option key={cls} value={cls}>{cls}</option>
+                  ))}
+                </SelectElement>
+                <SquareRandomButton 
+                  onClick={() => randomizePartyMember(index, 'class')}
+                >
+                  🎲
+                </SquareRandomButton>
+              </SelectWrapper>
+            </PartyMemberCard>
+          ))}
+        </PartyGrid>
+      )}
     </Section>
   );
 
+  // Update the settings selection render function
   const renderSettingSelection = () => (
     <Section>
       <SettingsGrid>
         <label>
-          Environment:
-          <Select
-            value={selectedSettings.environment}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              environment: e.target.value
-            })}
-          >
-            <option value="">Select Environment</option>
-            {ENVIRONMENTS.map(env => (
-              <option key={env} value={env}>{env}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Environment:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.environment}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  environment: e.target.value
+                })}
+              >
+                <option value="">Select Environment</option>
+                {ENVIRONMENTS.map(env => (
+                  <option key={env} value={env}>{env}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('environment', ENVIRONMENTS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
 
         <label>
-          Political System:
-          <Select
-            value={selectedSettings.politicalSystem}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              politicalSystem: e.target.value
-            })}
-          >
-            <option value="">Select Political System</option>
-            {POLITICAL_SYSTEMS.map(system => (
-              <option key={system} value={system}>{system}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Political System:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.politicalSystem}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  politicalSystem: e.target.value
+                })}
+              >
+                <option value="">Select Political System</option>
+                {POLITICAL_SYSTEMS.map(system => (
+                  <option key={system} value={system}>{system}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('politicalSystem', POLITICAL_SYSTEMS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
 
         <label>
-          Season:
-          <Select
-            value={selectedSettings.season}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              season: e.target.value
-            })}
-          >
-            <option value="">Select Season</option>
-            {SEASONS.map(season => (
-              <option key={season} value={season}>{season}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Season:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.season}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  season: e.target.value
+                })}
+              >
+                <option value="">Select Season</option>
+                {SEASONS.map(season => (
+                  <option key={season} value={season}>{season}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('season', SEASONS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
 
         <label>
-          Weather:
-          <Select
-            value={selectedSettings.weather}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              weather: e.target.value
-            })}
-          >
-            <option value="">Select Weather</option>
-            {WEATHER_CONDITIONS.map(weather => (
-              <option key={weather} value={weather}>{weather}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Weather:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.weather}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  weather: e.target.value
+                })}
+              >
+                <option value="">Select Weather</option>
+                {WEATHER_CONDITIONS.map(weather => (
+                  <option key={weather} value={weather}>{weather}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('weather', WEATHER_CONDITIONS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
 
         <label>
-          Technology Level:
-          <Select
-            value={selectedSettings.techLevel}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              techLevel: e.target.value
-            })}
-          >
-            <option value="">Select Technology Level</option>
-            {TECH_LEVELS.map(tech => (
-              <option key={tech} value={tech}>{tech}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Technology Level:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.techLevel}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  techLevel: e.target.value
+                })}
+              >
+                <option value="">Select Technology Level</option>
+                {TECH_LEVELS.map(tech => (
+                  <option key={tech} value={tech}>{tech}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('techLevel', TECH_LEVELS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
 
         <label>
-          Magic Level:
-          <Select
-            value={selectedSettings.magicLevel}
-            onChange={(e) => setSelectedSettings({
-              ...selectedSettings,
-              magicLevel: e.target.value
-            })}
-          >
-            <option value="">Select Magic Level</option>
-            {MAGIC_LEVELS.map(magic => (
-              <option key={magic} value={magic}>{magic}</option>
-            ))}
-          </Select>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+            Magic Level:
+            <SelectWrapper>
+              <SelectElement
+                value={selectedSettings.magicLevel}
+                onChange={(e) => setSelectedSettings({
+                  ...selectedSettings,
+                  magicLevel: e.target.value
+                })}
+              >
+                <option value="">Select Magic Level</option>
+                {MAGIC_LEVELS.map(magic => (
+                  <option key={magic} value={magic}>{magic}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeSingleSetting('magicLevel', MAGIC_LEVELS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
+          </div>
         </label>
       </SettingsGrid>
     </Section>
@@ -729,185 +917,201 @@ const DndGenerator: React.FC = () => {
         <CategorySection>
           <h3>
             Core Conflict
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('conflictType', CONFLICT_TYPES)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.conflictType}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  conflictType: e.target.value
+                }))}
+              >
+                <option value="">Select Conflict Type</option>
+                {CONFLICT_TYPES.map(type => (
+                  <option key={type} value={type}>{type}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('conflictType', CONFLICT_TYPES)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.conflictType}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              conflictType: e.target.value
-            }))}
-          >
-            <option value="">Select Conflict Type (Optional)</option>
-            {CONFLICT_TYPES.map(type => (
-              <option key={type} value={type}>{type}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Antagonist
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('antagonistType', ANTAGONIST_TYPES)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.antagonistType}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  antagonistType: e.target.value
+                }))}
+              >
+                <option value="">Select Antagonist Type</option>
+                {ANTAGONIST_TYPES.map(type => (
+                  <option key={type} value={type}>{type}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('antagonistType', ANTAGONIST_TYPES)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.antagonistType}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              antagonistType: e.target.value
-            }))}
-          >
-            <option value="">Select Antagonist Type (Optional)</option>
-            {ANTAGONIST_TYPES.map(type => (
-              <option key={type} value={type}>{type}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Stakes
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('stakes', STAKES)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.stakes}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  stakes: e.target.value
+                }))}
+              >
+                <option value="">Select Stakes</option>
+                {STAKES.map(stake => (
+                  <option key={stake} value={stake}>{stake}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('stakes', STAKES)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.stakes}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              stakes: e.target.value
-            }))}
-          >
-            <option value="">Select Stakes (Optional)</option>
-            {STAKES.map(stake => (
-              <option key={stake} value={stake}>{stake}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Complications
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('complications', COMPLICATIONS)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.complications}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  complications: e.target.value
+                }))}
+              >
+                <option value="">Select Complication</option>
+                {COMPLICATIONS.map(complication => (
+                  <option key={complication} value={complication}>{complication}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('complications', COMPLICATIONS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.complications}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              complications: e.target.value
-            }))}
-          >
-            <option value="">Select Complication (Optional)</option>
-            {COMPLICATIONS.map(complication => (
-              <option key={complication} value={complication}>{complication}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Plot Twist
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('plotTwist', PLOT_TWISTS)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.plotTwist}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  plotTwist: e.target.value
+                }))}
+              >
+                <option value="">Select Plot Twist</option>
+                {PLOT_TWISTS.map(twist => (
+                  <option key={twist} value={twist}>{twist}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('plotTwist', PLOT_TWISTS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.plotTwist}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              plotTwist: e.target.value
-            }))}
-          >
-            <option value="">Select Plot Twist (Optional)</option>
-            {PLOT_TWISTS.map(twist => (
-              <option key={twist} value={twist}>{twist}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             MacGuffin
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('macguffin', MACGUFFINS)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.macguffin}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  macguffin: e.target.value
+                }))}
+              >
+                <option value="">Select MacGuffin</option>
+                {MACGUFFINS.map(macguffin => (
+                  <option key={macguffin} value={macguffin}>{macguffin}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('macguffin', MACGUFFINS)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.macguffin}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              macguffin: e.target.value
-            }))}
-          >
-            <option value="">Select MacGuffin (Optional)</option>
-            {MACGUFFINS.map(macguffin => (
-              <option key={macguffin} value={macguffin}>{macguffin}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Location Significance
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('locationSignificance', LOCATION_SIGNIFICANCE)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.locationSignificance}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  locationSignificance: e.target.value
+                }))}
+              >
+                <option value="">Select Location Significance</option>
+                {LOCATION_SIGNIFICANCE.map(significance => (
+                  <option key={significance} value={significance}>{significance}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('locationSignificance', LOCATION_SIGNIFICANCE)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.locationSignificance}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              locationSignificance: e.target.value
-            }))}
-          >
-            <option value="">Select Location Significance (Optional)</option>
-            {LOCATION_SIGNIFICANCE.map(significance => (
-              <option key={significance} value={significance}>{significance}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <CategorySection>
           <h3>
             Time Pressure
-            <RandomizeCategoryButton 
-              onClick={() => randomizeCategory('timePressure', TIME_PRESSURE)}
-            >
-              🎲 Random
-            </RandomizeCategoryButton>
+            <SelectWrapper>
+              <SelectElement
+                value={adventureSettings.timePressure}
+                onChange={(e) => setAdventureSettings(prev => ({
+                  ...prev,
+                  timePressure: e.target.value
+                }))}
+              >
+                <option value="">Select Time Pressure</option>
+                {TIME_PRESSURE.map(pressure => (
+                  <option key={pressure} value={pressure}>{pressure}</option>
+                ))}
+              </SelectElement>
+              <SquareRandomButton 
+                onClick={() => randomizeCategory('timePressure', TIME_PRESSURE)}
+              >
+                🎲
+              </SquareRandomButton>
+            </SelectWrapper>
           </h3>
-          <Select
-            value={adventureSettings.timePressure}
-            onChange={(e) => setAdventureSettings(prev => ({
-              ...prev,
-              timePressure: e.target.value
-            }))}
-          >
-            <option value="">Select Time Pressure (Optional)</option>
-            {TIME_PRESSURE.map(pressure => (
-              <option key={pressure} value={pressure}>{pressure}</option>
-            ))}
-          </Select>
         </CategorySection>
 
         <BottomButtonGroup>
@@ -1009,61 +1213,83 @@ const DndGenerator: React.FC = () => {
 
   return (
     <Container>
-      <TabContainer>
-        <Tab $isActive={activeTab === 'party'} onClick={() => setActiveTab('party')}>
-          Party Composition
-        </Tab>
-        <Tab $isActive={activeTab === 'setting'} onClick={() => setActiveTab('setting')}>
-          World Setting
-        </Tab>
-        <Tab $isActive={activeTab === 'adventure'} onClick={() => setActiveTab('adventure')}>
-          Adventure
-        </Tab>
-      </TabContainer>
-
-      <TabContent>
-        {activeTab === 'party' && (
-          <Section>
-            <h2>Party Composition</h2>
-            {renderPartyCreation()}
-            <ButtonGroup>
-              <RandomizeButton onClick={randomizeParty}>
-                🎲 Random Party
-              </RandomizeButton>
-              <Button onClick={() => setActiveTab('setting')}>
-                Continue to Setting
+      <ContentContainer>
+        <Header>
+          <TopBar>
+            <BackButton onClick={() => window.location.href = '/devs-web-zone'}>
+              ← Back to Home
+            </BackButton>
+          </TopBar>
+          <TabContainer>
+            <TabGroup>
+              <Tab $isActive={activeTab === 'party'} onClick={() => setActiveTab('party')}>
+                Party
+              </Tab>
+              <Tab $isActive={activeTab === 'setting'} onClick={() => setActiveTab('setting')}>
+                World
+              </Tab>
+              <Tab $isActive={activeTab === 'adventure'} onClick={() => setActiveTab('adventure')}>
+                Adventure
+              </Tab>
+            </TabGroup>
+            <TopButtonGroup>
+              <RandomizeAllButton onClick={randomizeAll}>
+                🎲 Randomize Everything
+              </RandomizeAllButton>
+              <Button onClick={clearAll}>
+                Clear Everything
               </Button>
-            </ButtonGroup>
-          </Section>
-        )}
+            </TopButtonGroup>
+          </TabContainer>
+        </Header>
 
-        {activeTab === 'setting' && (
-          <Section>
-            <h2>World Setting</h2>
-            {renderSettingSelection()}
-            <ButtonGroup>
-              <RandomizeButton onClick={randomizeSetting}>
-                🎲 Randomize Setting
-              </RandomizeButton>
-              <Button onClick={() => setActiveTab('adventure')}>
-                Continue to Adventure
-              </Button>
-            </ButtonGroup>
-          </Section>
-        )}
+        <TabContent>
+          {activeTab === 'party' && (
+            <Section>
+              <h2>Party Composition</h2>
+              {renderPartyCreation()}
+              <ButtonGroup>
+                <RandomizeButton onClick={randomizeParty}>
+                  🎲 Random Party
+                </RandomizeButton>
+                <Button onClick={clearParty}>
+                  Clear All
+                </Button>
+                <Button onClick={() => setActiveTab('setting')}>
+                  Continue to Setting
+                </Button>
+              </ButtonGroup>
+            </Section>
+          )}
 
-        {activeTab === 'adventure' && (
-          <Section>
-            <h2>Adventure Generator</h2>
-            {renderAdventureGenerator()}
-          </Section>
-        )}
+          {activeTab === 'setting' && (
+            <Section>
+              <h2>World Setting</h2>
+              {renderSettingSelection()}
+              <ButtonGroup>
+                <RandomizeButton onClick={randomizeSetting}>
+                  🎲 Randomize Setting
+                </RandomizeButton>
+                <Button onClick={clearSettings}>
+                  Clear All
+                </Button>
+                <Button onClick={() => setActiveTab('adventure')}>
+                  Continue to Adventure
+                </Button>
+              </ButtonGroup>
+            </Section>
+          )}
 
-        {renderSummary()}
-      </TabContent>
-      <RandomizeAllButton onClick={randomizeAll}>
-        🎲 Randomize Everything!
-      </RandomizeAllButton>
+          {activeTab === 'adventure' && (
+            <Section>
+              <h2>Adventure Generator</h2>
+              {renderAdventureGenerator()}
+            </Section>
+          )}
+
+          {renderSummary()}
+        </TabContent>
+      </ContentContainer>
     </Container>
   );
 };

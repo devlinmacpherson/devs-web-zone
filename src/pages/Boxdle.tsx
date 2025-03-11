@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Boxdle.css';
 import styled from 'styled-components';
+import { AppPageContainer } from '../components/SharedStyles';
 
 interface Movie {
   id: string;
@@ -64,11 +65,33 @@ const getFallbackData = (): FallbackData => {
   };
 };
 
-const BoxdleContainer = styled.div`
-  min-height: 100vh;
-  width: 100%;
+const BoxdleContainer = styled(AppPageContainer)`
   background: #14181c;
   color: #fff;
+`;
+
+const BoxdleHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+
+  .back-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: inherit;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1 {
+    margin: 1rem 0 0.5rem;
+  }
 `;
 
 const Boxdle = () => {
@@ -389,7 +412,7 @@ const Boxdle = () => {
   if (loading) {
     return (
       <BoxdleContainer>
-        <div className="boxdle-container">
+        <div className="app-content">
           <div className="boxdle-loading">
             <div className="loading-spinner"></div>
             <p>Loading Letterboxd reviews...</p>
@@ -402,7 +425,7 @@ const Boxdle = () => {
   if (error) {
     return (
       <BoxdleContainer>
-        <div className="boxdle-container">
+        <div className="app-content">
           <div className="boxdle-error">
             <h2>Error</h2>
             <p>{error}</p>
@@ -415,12 +438,12 @@ const Boxdle = () => {
 
   return (
     <BoxdleContainer>
-      <div className="boxdle-container">
-        <div className="boxdle-header">
+      <div className="app-content">
+        <BoxdleHeader>
           <Link to="/" className="back-link">← Home</Link>
           <h1>Boxdle</h1>
           <p className="boxdle-tagline">Guess the movie from Letterboxd reviews</p>
-        </div>
+        </BoxdleHeader>
         
         <div className="boxdle-game">
           {currentReview && (
