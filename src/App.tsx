@@ -4,6 +4,7 @@ import './App.css';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import starsBackground from './images/stars.gif';
+import GradSchoolQuiz from './pages/GradSchoolQuiz';
 
 // Import pages
 import Boxdle from './pages/Boxdle';
@@ -13,7 +14,7 @@ import ComingSoon from './pages/ComingSoon';
 import CircleMerge from './pages/CircleMerge';
 import DndGenerator from './pages/DndGenerator';
 
-type AppStatus = 'ready' | 'development' | 'maintenance' | 'coming-soon';
+type AppStatus = 'ready' | 'development' | 'maintenance' | 'coming-soon' | 'complete';
 
 interface AppCardProps {
   backgroundColor?: string;
@@ -37,6 +38,7 @@ interface App {
   buttonBgColor?: string;
   buttonTextColor?: string;
   icon: string;
+  element?: React.ReactNode;
 }
 
 interface StatusButtonProps extends AppCardProps {
@@ -254,7 +256,8 @@ function AppContent() {
       textColor: '#000000',
       buttonBgColor: '#c0c0c0',
       buttonTextColor: '#000000',
-      icon: '🎬'
+      icon: '🎬',
+      element: <Boxdle />
     },
     {
       name: 'Magnet Poetry',
@@ -267,7 +270,8 @@ function AppContent() {
       textColor: '#000000',
       buttonBgColor: '#c0c0c0',
       buttonTextColor: '#000000',
-      icon: '📝'
+      icon: '📝',
+      element: <MagnetPoetry />
     },
     {
       name: 'D&D One-Shot',
@@ -280,7 +284,8 @@ function AppContent() {
       textColor: '#000000',
       buttonBgColor: '#c0c0c0',
       buttonTextColor: '#000000',
-      icon: '🎲'
+      icon: '🎲',
+      element: <DndGenerator />
     },
     {
       name: 'TCGTourney',
@@ -301,6 +306,14 @@ function AppContent() {
       titleColor: '#000080',
       textColor: '#000000',
       icon: '✨'
+    },
+    {
+      name: 'Grad School Helper',
+      description: 'Find your perfect grad school match',
+      path: '/grad-school',
+      status: 'complete',
+      icon: '🎓',
+      element: <GradSchoolQuiz />
     }
   ];
 
@@ -354,6 +367,7 @@ function AppContent() {
           <Route path="/circle-merge" element={<CircleMerge />} />
           <Route path="/dnd-generator" element={<DndGenerator />} />  
           <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route path="/grad-school" element={<GradSchoolQuiz />} />
         </Routes>
       </ContentWrapper>
     </AppContainer>
